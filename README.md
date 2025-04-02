@@ -46,23 +46,14 @@ Award-winning project, bagged "Most Valuable Project" at iQuest 2021 🏆
 
 ---
 
-## 📈 GitHub Stats & Contributions
-
-![Sakar's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sakar1601&show_icons=true&theme=default)  
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Sakar1601&theme=default)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Sakar1601&layout=compact)
-
----
-
 ## 🤝 Let's Connect
 
 🔗 [LinkedIn](https://linkedin.com/in/sakar-joshi/)  
 📫 Email: sakar.joshi1601@gmail.com  
-🌐 Portfolio: Coming soon...
+
 
 > “Debugging is like being the detective in a crime movie where you are also the murderer.” – Filipe Fortes
 
----
 
 🔍 Always learning, always building. Let’s make tech human again.
 
