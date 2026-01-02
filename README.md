@@ -1,4 +1,4 @@
-**👋 Hey, I’m Sakar Joshi**
+## **👋 Hey, I’m Sakar Joshi**
 
 💻 **Software Engineer | 🧩 Full-Stack & System Builder | ☁️ Cloud & Architecture**
 🤖 Using **AI as a productivity multiplie**r, not a crutch
