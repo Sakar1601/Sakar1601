@@ -1,12 +1,13 @@
 ## **👋 Hey, I’m Sakar Joshi**
 
 💻 **Software Engineer | 🧩 Full-Stack & System Builder | ☁️ Cloud & Architecture**
+
 🤖 Using **AI as a productivity multiplie**r, not a crutch
 
 I build **production-grade systems** where frontend polish, backend correctness, and cloud architecture actually work together.
 I care about **how systems behave in the real world**, not just how they demo.
 
-**🧠 About Me**
+## **🧠 About Me**
 
 🎓 **M.S. in Information Technology** — Arizona State University (GPA: 4.0)
 📍 Tempe, AZ
@@ -15,8 +16,8 @@ I care about **how systems behave in the real world**, not just how they demo.
 I’ve worked on **enterprise platforms, university-scale systems, live-event applications**, and cloud-native projects.
 From requirements → architecture → implementation → deployment, I like owning the whole story.
 
-**🧰 What I Build**
-**☁️ AWS Cloud Engineer’s Toolbox**
+## **🧰 What I Build**
+## **☁️ AWS Cloud Engineer’s Toolbox**
 
 An interactive, fully serverless simulation of modern cloud backend systems.
 
@@ -27,7 +28,7 @@ An interactive, fully serverless simulation of modern cloud backend systems.
 
 Focus: Cloud architecture · system design · cost-aware infrastructure
 
-**🤖 AI-Powered Resume Builder**
+## **🤖 AI-Powered Resume Builder**
 
 A real product built for real hiring pipelines.
 
@@ -38,7 +39,7 @@ A real product built for real hiring pipelines.
 
 Focus: Full-stack architecture · AI integration · UX for recruiters
 
-**✅ Monotask**
+## **✅ Monotask**
 
 A clean productivity system for tasks and habits.
 
@@ -49,7 +50,7 @@ A clean productivity system for tasks and habits.
 
 Focus: Scalable frontend architecture · data integrity · performance
 
-**🏆 Nexus Job Portal**
+## **🏆 Nexus Job Portal**
 
 Hackathon-winning full-stack system (built in 24 hours).
 
@@ -59,7 +60,7 @@ Hackathon-winning full-stack system (built in 24 hours).
 
 Focus: Rapid system design · collaboration · delivery under pressure
 
-**🧩 Tech Stack (What I Actually Use)**
+## **🧩 Tech Stack (What I Actually Use)**
 
 **🧑‍💻 Languages**
 
@@ -83,7 +84,7 @@ Focus: Rapid system design · collaboration · delivery under pressure
 🧠 GitHub Copilot · Claude · OpenAI
 Used for refactoring, debugging, architecture exploration, and content quality
 
-**🧭 How I Think About Engineering**
+## **🧭 How I Think About Engineering**
 
 🧩 Architecture > Frameworks
 🧠 Clarity before cleverness
