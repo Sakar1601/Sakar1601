@@ -1,60 +1,93 @@
-# 👋 Hello World! I'm Sakar Joshi
+👋 Hi, I’m Sakar Joshi
 
-Welcome to my GitHub profile — where front-end meets functionality, cloud meets code, and innovation meets execution.
+I build production-grade software systems that balance clean user experience, solid architecture, and real-world constraints like scale, performance, and cost.
 
----
+My work sits at the intersection of frontend engineering, backend systems, cloud architecture, and AI-assisted development. I care deeply about how systems are designed, not just how they look.
 
-## 💼 About Me
+🧠 About Me
 
-🎓 MSc in Information Technology @ Arizona State University (Class of 2025)  
-💻 Software Engineer | Cloud & Full-Stack Developer  
-🌐 Open to Summer 2025 Internships | Actively building projects in AWS, DevOps, and Scalable Web Apps  
-🌱 Currently diving deep into system design, AI integrations, and cloud-native architectures  
-📍 Based in Tempe, AZ | Originally from India 🇮🇳
+🎓 Master of Science in Information Technology, Arizona State University (GPA 4.0)
+💻 Software Engineer | Full-Stack | Cloud & System Architecture
+📦 Experienced with production systems, real users, and live deployments
+🤖 Use AI as a productivity multiplier, not a replacement for engineering judgment
+📍 Tempe, AZ | Open to full-time Software Engineering roles
 
----
+I’ve worked across enterprise systems, university platforms, and large live-event applications, taking ownership from requirements to deployment. I enjoy building things that last, scale, and stay maintainable under pressure.
 
-## 🚀 Projects Worth Showcasing
+🚀 Featured Projects
+🧰 AWS Cloud Engineer’s Toolbox
 
-### 🧑‍🎓 Student Support System  
-A web platform developed during COVID to manage student records and streamline administration.  
-- 📊 Boosted efficiency by 100% in database interactions  
-- 🛠 Stack: PHP, MySQL, Bootstrap, JS  
-- 💡 Focus: Clean UI, admin dashboards, resilience
+An interactive, fully serverless simulation of real-world cloud backend systems.
 
-### 🏛️ Nexus - University Placement Portal  
-Award-winning project, bagged "Most Valuable Project" at iQuest 2021 🏆  
-- 🧩 Company-side job creation, recruiter-applicant messaging, verification flows  
-- 📲 Built for exclusive university-wide use  
-- 🔧 Stack: Laravel, MySQL, JS
+• Built with a live AWS stack instead of static mocks
+• Demonstrates Infrastructure, Serverless, Storage, CI/CD, and Monitoring concepts
+• Uses Lambda, API Gateway, DynamoDB, and S3 on the AWS Free Tier
+• Designed for clarity, cost awareness, and real engineering workflows
 
-### 🧪 Online Exam Portal  
-- Role-based system for student evaluations  
-- Admin & Faculty panels with results analytics  
-- Stack: PHP, MySQL, HTML/CSS/JS
+Focus: Cloud architecture, system design, cost-efficient infrastructure, observability
 
-📁 More detailed READMEs & live demos coming soon! 
+🧠 AI-Powered Resume Builder
 
----
+A production-ready resume builder focused on ATS optimization and real hiring outcomes.
 
-## 🔧 Tech Stack & Tools
+• Live editor with real-time preview and PDF export
+• AI-assisted bullet rewriting and job-description tailoring
+• Guest mode with seamless upgrade to authenticated users
+• Secure backend using Supabase with Row Level Security
 
-**Languages**: ![Python](https://img.shields.io/badge/-Python-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) ![C++](https://img.shields.io/badge/-C++-00599C) ![SQL](https://img.shields.io/badge/-SQL-lightgrey)  
-**Frameworks**: ![React](https://img.shields.io/badge/-React-61DAFB) ![Node.js](https://img.shields.io/badge/-Node.js-green) ![Angular](https://img.shields.io/badge/-Angular-red) ![Django](https://img.shields.io/badge/-Django-darkgreen)  
-**Cloud & DevOps**: ![AWS](https://img.shields.io/badge/-AWS-orange) ![Azure](https://img.shields.io/badge/-Azure-blue) ![Docker](https://img.shields.io/badge/-Docker-2496ED) ![CI/CD](https://img.shields.io/badge/-CI%2FCD-lightgrey)  
-**Tools**: ![Git](https://img.shields.io/badge/-Git-orange) ![GitHub](https://img.shields.io/badge/-GitHub-black) ![Postman](https://img.shields.io/badge/-Postman-orange) ![Jira](https://img.shields.io/badge/-Jira-blue)
+Focus: Full-stack architecture, AI integration, data modeling, UX for recruiters
 
----
+✅ Monotask
 
-## 🤝 Let's Connect
+A minimalist productivity app for tasks and habit tracking.
 
-🔗 [LinkedIn](https://linkedin.com/in/sakar-joshi/)  
-📫 Email: sakar.joshi1601@gmail.com  
+• Built with React, TypeScript, and Supabase
+• Secure per-user data isolation using RLS
+• Analytics dashboards, recurring tasks, and habit logs
+• Optimistic updates and cache-driven state management
 
+Focus: Scalable frontend architecture, data integrity, clean UX
 
-> “Debugging is like being the detective in a crime movie where you are also the murderer.” – Filipe Fortes
+🏛️ Nexus Job Portal (Hackathon Winner)
 
+Award-winning job portal built in 24 hours.
 
-🔍 Always learning, always building. Let’s make tech human again.
+• Multi-role platform for students, companies, and universities
+• Job pools, document uploads, and email notifications
+• Recognized for usability and system completeness
 
----
+Focus: Rapid prototyping, system thinking, collaborative delivery
+
+🧩 What I’m Strong At
+
+Languages
+JavaScript, TypeScript, Python, SQL
+
+Frontend
+React, Next.js, Angular, Tailwind CSS, Accessibility (WCAG)
+
+Backend & Architecture
+REST APIs, PostgreSQL, Supabase, Auth (RLS, RBAC/ABAC), Data Modeling
+
+Cloud & DevOps
+AWS (Lambda, S3, API Gateway, DynamoDB), CI/CD, Docker, Cost-aware design
+
+AI-Assisted Development
+GitHub Copilot, Claude, OpenAI
+Using AI for refactoring, debugging, architecture exploration, and content quality
+
+🧭 How I Think About Engineering
+
+• Systems should be understandable before they are clever
+• Architecture decisions matter more than frameworks
+• AI is best used to amplify thinking, not shortcut it
+• Code should scale with both users and developers
+• Shipping matters, but maintainability matters more
+
+🤝 Let’s Connect
+
+🔗 LinkedIn: https://linkedin.com/in/sakar-joshi
+
+📫 Email: sakar.joshi1601@gmail.com
+
+“Make it work. Make it right. Make it scalable.”
