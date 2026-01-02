@@ -92,10 +92,10 @@ Used for refactoring, debugging, architecture exploration, and content quality
 📈 Systems must scale with users and developers
 🚢 Shipping matters — maintainability matters more
 
-**🌍 Let’s Connect
+## **🌍 Let’s Connect**
 
 🔗 LinkedIn: https://linkedin.com/in/sakar-joshi
 
-📫 Email: sakar.joshi1601@gmail.com**
+📫 Email: sakar.joshi1601@gmail.com
 
 _"Make it work. Make it right. Make it scalable."_
