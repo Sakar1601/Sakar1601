@@ -257,6 +257,21 @@ def experience(n):
         body += lines(impact_, 52, 496, y + 44, 26, font_family=SANS, font_size=17.5, fill=t["text"])
     return svg(W, H, "Experience: " + "; ".join(f"{r} at {c.split(' · ')[0]}, {d.title()}" for d, r, c, _, _ in EXPERIENCE), {F_BG, F_I4, F_I6, F_J5}, body)
 
+# ------------------------------------------------------------------ education
+EDUCATION = [("M.S.", "Information Technology", "Arizona State University", "2024 – 2025", "blue"),
+             ("B.E.", "Computer Engineering", "Kadi Sarva Vishwavidyalaya", "2019 – 2023", "orange")]
+
+def education(n):
+    t = THEMES[n]; W, H, cw, gap = 1000, 146, 484, 24; body = ""
+    for i, (deg, title, uni, years, pop) in enumerate(EDUCATION):
+        x = 4 + i * (cw + gap); y = 6
+        body += nb(t, x, y, cw, 124, 16, t["card"], 3, 6)
+        body += f'<rect x="{x + 24}" y="{y + 20}" width="62" height="30" rx="15" fill="{t[pop]}" stroke="{t["line"]}" stroke-width="2.2"/><text x="{x + 55}" y="{y + 41}" text-anchor="middle" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["ink"]}" letter-spacing="1.2">{deg}</text>'
+        body += f'<text x="{x + cw - 24}" y="{y + 41}" text-anchor="end" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["muted"]}" letter-spacing="1.2">{years}</text>'
+        body += f'<text x="{x + 24}" y="{y + 82}" font-family="{DISPLAY}" font-size="31" font-weight="800" fill="{t["text"]}" letter-spacing="-.8">{escape(title)}</text>'
+        body += f'<text x="{x + 24}" y="{y + 108}" font-family="{SANS}" font-size="18" font-weight="600" fill="{t["muted"]}">{escape(uni)}</text>'
+    return svg(W, H, "Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023", {F_BG, F_I6, F_J5}, body)
+
 # ------------------------------------------------------------------ capabilities (chips)
 CAPS = [("FRONTEND", "blue", ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS", "Redux Toolkit", "TanStack Query", "Playwright"]),
         ("BACKEND & DATA", "green", ["Python", "FastAPI", "PostgreSQL", "SQL", "Supabase", "Row-Level Security", ".NET (C#)", "REST", "JWT / SSO"]),
@@ -355,6 +370,7 @@ if __name__ == "__main__":
         for k in PROJECTS: (ASSETS / f"card-{k}-{n}.svg").write_text(card(k, n), encoding="utf-8")
         (ASSETS / "card-kramflow-{}.svg".format(n)).write_text(card_wide(n), encoding="utf-8")
         (ASSETS / f"experience-{n}.svg").write_text(experience(n), encoding="utf-8")
+        (ASSETS / f"education-{n}.svg").write_text(education(n), encoding="utf-8")
         (ASSETS / f"capabilities-{n}.svg").write_text(capabilities(n), encoding="utf-8")
     d = fetch_stats() if os.environ.get("SKIP_STATS") != "1" else dict(repos=7, stars=4, prs=120, contrib=752, langs=[("TypeScript", "#3178c6", .74), ("JavaScript", "#f1e05a", .09), ("Python", "#3572A5", .08), ("CSS", "#563d7c", .06)])
     for n in THEMES: (ASSETS / f"github-{n}.svg").write_text(github(n, d), encoding="utf-8")

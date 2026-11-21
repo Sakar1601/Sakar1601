@@ -35,7 +35,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.b6caf3f9.svg"><img alt="Experience: Systems and DevOps Engineer at Prama AI, May 2026 to now; Frontend Engineer Intern at XDuce for QBE Insurance, Sep to Dec 2025; Web Developer at ASU Project Humanities, May to Dec 2025; Software Developer at Macrosoft Creations, Sep 2022 to Nov 2023" src="assets/experience-light.4f85004e.svg" width="100%"></picture>
 
-<p align="center"><sub>M.S. Information Technology, Arizona State University &nbsp;·&nbsp; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya</sub></p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/education-dark.b43ecb69.svg"><img alt="Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023" src="assets/education-light.05d53f89.svg" width="100%"></picture>
 
 <br>
 
@@ -48,9 +48,9 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
 <<<<<<< Updated upstream
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.17b25793.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.2a0b3162.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.b0586175.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.8df6afd6.svg" width="100%"></picture>
 =======
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.17b25793.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.2a0b3162.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.b0586175.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.8df6afd6.svg" width="100%"></picture>
 >>>>>>> Stashed changes
 
 <br>
