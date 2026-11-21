@@ -159,11 +159,24 @@ PROJECTS = {
     "portal": ("04", "Employee Portal", "A directory app deployed like a regulated enterprise would.", "Two Vault clusters that unseal each other · no public registries", ["Terraform", "Vault", "FastAPI"], "green"),
 }
 
+SHOTS = Path(__file__).resolve().parent / "shots"
+
+def screenshot_frame(t, key, w, h):
+    """Real screenshot (committed under .github/scripts/shots) clipped inside the sticker frame; None if missing."""
+    f = SHOTS / f"{key}.jpg"
+    if not f.exists(): return None
+    pad = 10; iw, ih = w - 2 * pad, h - 2 * pad
+    data = base64.b64encode(f.read_bytes()).decode()
+    return (f'<defs><clipPath id="sc-{key}"><rect x="{pad}" y="{pad}" width="{iw}" height="{ih}" rx="9"/></clipPath></defs>'
+            f'<image href="data:image/jpeg;base64,{data}" x="{pad}" y="{pad}" width="{iw}" height="{ih}" preserveAspectRatio="xMidYMid slice" clip-path="url(#sc-{key})"/>'
+            f'<rect x="{pad}" y="{pad}" width="{iw}" height="{ih}" rx="9" fill="none" stroke="{t["line"]}" stroke-width="2.5"/>')
+
 def card(key, n):
     t = THEMES[n]; W, H = 760, 452; num, title, desc, proof, tags, pop = PROJECTS[key]
+    frame = screenshot_frame(t, key, 236, 160) or ('<g transform="translate(8 6)">' + art(key, t) + '</g>')
     body = nb(t, 4, 4, W - 18, H - 18, 22, t["card"], 3, 9)
     body += nb(t, 38, 36, 60, 60, 12, t[pop], 3, 4) + f'<text x="68" y="76" text-anchor="middle" font-family="{DISPLAY}" font-size="28" font-weight="800" fill="{t["ink"]}">{num}</text>'
-    body += f'<g transform="translate(474 40) rotate({2.2 if int(num) % 2 else -2.2} 118 80)">{nb(t, 0, 0, 236, 160, 16, t[pop], 3, 6)}<g transform="translate(8 6)">{art(key, t)}</g></g>'
+    body += f'<g transform="translate(474 40) rotate({2.2 if int(num) % 2 else -2.2} 118 80)">{nb(t, 0, 0, 236, 160, 16, t[pop], 3, 6)}{frame}</g>'
     body += f'<text x="40" y="170" font-family="{DISPLAY}" font-size="52" font-weight="800" fill="{t["text"]}" letter-spacing="-1.5">{escape(title)}</text>'
     body += lines(desc, 50, 40, 250, 34, font_family=SANS, font_size=23, fill=t["text"])
     body += f'<rect x="40" y="304" width="12" height="12" rx="3" fill="{t[pop]}" stroke="{t["line"]}" stroke-width="2.2"/>' + lines(proof, 42, 64, 317, 28, font_family=MONO, font_size=17.5, fill=t["muted"])
@@ -193,7 +206,7 @@ def card_wide(n):
     t = THEMES[n]; W, H = 1536, 488; pop = "lilac"
     body = nb(t, 4, 4, W - 18, H - 18, 22, t["card"], 3, 9)
     body += nb(t, 38, 36, 60, 60, 12, t[pop], 3, 4) + f'<text x="68" y="76" text-anchor="middle" font-family="{DISPLAY}" font-size="28" font-weight="800" fill="{t["ink"]}">05</text>'
-    body += f'<g transform="translate(900 40) rotate(-1.6 270 150)">{nb(t, 0, 0, 540, 300, 18, t[pop], 3, 6)}<g transform="translate(0 0)">{art_kramflow(t)}</g></g>'
+    body += f'<g transform="translate(900 40) rotate(-1.6 270 150)">{nb(t, 0, 0, 540, 300, 18, t[pop], 3, 6)}{screenshot_frame(t, "kramflow", 540, 300) or art_kramflow(t)}</g>'
     body += f'<text x="40" y="170" font-family="{DISPLAY}" font-size="52" font-weight="800" fill="{t["text"]}" letter-spacing="-1.5">Kramflow</text>'
     body += lines("A multi-tenant live-event operating system: the operator console, phone remote and every display share one real-time state.", 66, 40, 250, 34, font_family=SANS, font_size=23, fill=t["text"])
     body += f'<rect x="40" y="338" width="12" height="12" rx="3" fill="{t[pop]}" stroke="{t["line"]}" stroke-width="2.2"/>' + lines("I own the data layer, reliability and AI: tenant isolation, cold-start-proof rate limiting, lease-gated live sequencing.", 70, 64, 336, 28, font_family=MONO, font_size=17.5, fill=t["muted"])

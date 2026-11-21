@@ -20,11 +20,11 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-work-dark.d78ef78b.svg"><img alt="What I've built" src="assets/h-work-light.72cf61f2.svg" width="100%"></picture>
 
 <p align="center">
-  <a href="https://github.com/Sakar1601/Monotask"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-monotask-dark.538c98a9.svg"><img alt="Monotask: tasks, calendar and habits with Claude-powered capture, as an installable PWA. RLS at the database, every AI write human-approved." src="assets/card-monotask-light.906e1c12.svg" width="49%"></picture></a>
-  <a href="https://github.com/Sakar1601/cloudsentry"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cloudsentry-dark.e8f5684c.svg"><img alt="Cloudsentry: your AWS account as a live graph, watched by three AI agents. The model only records intent; a human approves every action." src="assets/card-cloudsentry-light.64186acd.svg" width="49%"></picture></a>
-  <a href="https://github.com/Sakar1601/resume-builder-app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-resume-dark.d158e4be.svg"><img alt="ResumeBuilder: ATS-friendly resumes with live preview and AI bullet rewriting, with Zod-validated output." src="assets/card-resume-light.fc9c004b.svg" width="49%"></picture></a>
-  <a href="https://github.com/Sakar1601/internal-employee-portal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-portal-dark.614674ca.svg"><img alt="Employee Portal: a directory app deployed like a regulated enterprise, with two Vault clusters that unseal each other." src="assets/card-portal-light.5fd08733.svg" width="49%"></picture></a>
-  <a href="https://github.com/Workflow-bench/kramflow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-kramflow-dark.01e7e2a8.svg"><img alt="Kramflow: a multi-tenant live-event operating system where the operator console, phone remote and every display share one real-time state. I own the data layer, reliability and AI features." src="assets/card-kramflow-light.d376b64d.svg" width="100%"></picture></a>
+  <a href="https://github.com/Sakar1601/Monotask"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-monotask-dark.a9a92ab1.svg"><img alt="Monotask: tasks, calendar and habits with Claude-powered capture, as an installable PWA. RLS at the database, every AI write human-approved." src="assets/card-monotask-light.2d04ed08.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/cloudsentry"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cloudsentry-dark.4615265b.svg"><img alt="Cloudsentry: your AWS account as a live graph, watched by three AI agents. The model only records intent; a human approves every action." src="assets/card-cloudsentry-light.96eb13d7.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/resume-builder-app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-resume-dark.ec36339c.svg"><img alt="ResumeBuilder: ATS-friendly resumes with live preview and AI bullet rewriting, with Zod-validated output." src="assets/card-resume-light.9014f5bf.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/internal-employee-portal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-portal-dark.3297172b.svg"><img alt="Employee Portal: a directory app deployed like a regulated enterprise, with two Vault clusters that unseal each other." src="assets/card-portal-light.302ac399.svg" width="49%"></picture></a>
+  <a href="https://github.com/Workflow-bench/kramflow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-kramflow-dark.531b9745.svg"><img alt="Kramflow: a multi-tenant live-event operating system where the operator console, phone remote and every display share one real-time state. I own the data layer, reliability and AI features." src="assets/card-kramflow-light.61380555.svg" width="100%"></picture></a>
 </p>
 
 <p align="center"><sub><b>Live:</b> <a href="https://monotask.vercel.app">Monotask</a> &nbsp;·&nbsp; <a href="https://sakar1601.github.io/cloudsentry/">Cloudsentry demo</a> &nbsp;·&nbsp; <a href="https://resume-builder-app-phi.vercel.app">ResumeBuilder</a> &nbsp;·&nbsp; <a href="https://sakar1601.github.io/internal-employee-portal/">Employee Portal demo</a> &nbsp;·&nbsp; <a href="https://kramflow.me">Kramflow</a></sub></p>
@@ -47,7 +47,11 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.322081e1.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.1887b965.svg" width="100%"></picture>
+<<<<<<< Updated upstream
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.5312e822.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.2c7a3822.svg" width="100%"></picture>
+=======
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.5312e822.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.2c7a3822.svg" width="100%"></picture>
+>>>>>>> Stashed changes
 
 <br>
 
