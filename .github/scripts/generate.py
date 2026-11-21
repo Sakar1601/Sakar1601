@@ -51,42 +51,34 @@ def lines(text, width, x, y, lh, **attrs):
 POPS = ["pink", "blue", "green", "orange", "lilac"]
 
 # ------------------------------------------------------------------ banner
+STICKERS = [("AI PRODUCTS", "pink", -6, 930, 112, 200), ("CLOUD DATA", "blue", 5, 1010, 198, 184), ("FINOPS", "green", -4, 842, 214, 112),
+            ("FULL-STACK", "orange", 4, 958, 292, 178)]
+INTRO = "At Prama AI I make FinOps for AI real: what teams actually spend on Claude, OpenAI, Gemini and Bedrock. In my own products, the AI proposes and a human decides."
+
 def banner(n):
-    t = THEMES[n]; W, H = 1200, 600
+    t = THEMES[n]; W, H = 1200, 456
     hlop = 1 if n == "light" else .55
-    term = f'''<g transform="translate(742 112) rotate(2.4)">{nb(t, 0, 0, 420, 300, 18, t["card"], 3, 9)}
-<path d="M1.5 40 H418.5" stroke="{t['line']}" stroke-width="3"/><rect x="1.5" y="1.5" width="417" height="38.5" rx="17" fill="{t['soft']}"/><rect x="1.5" y="22" width="417" height="18" fill="{t['soft']}"/><path d="M1.5 40 H418.5" stroke="{t['line']}" stroke-width="3"/>
-<circle cx="26" cy="21" r="6.5" fill="#FF5F57" stroke="{t['line']}" stroke-width="1.5"/><circle cx="46" cy="21" r="6.5" fill="#FEBC2E" stroke="{t['line']}" stroke-width="1.5"/><circle cx="66" cy="21" r="6.5" fill="#28C840" stroke="{t['line']}" stroke-width="1.5"/>
-<text x="190" y="26" text-anchor="middle" font-family="{MONO}" font-size="13" fill="{t['muted']}">finomics · pipeline</text>
-<circle cx="326" cy="21" r="4.5" fill="{t['yellow']}" stroke="{t['line']}" stroke-width="1.5"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></circle><text x="338" y="26" font-family="{MONO}" font-size="13" font-weight="500" fill="{t['text']}">running</text>
-<g font-family="{MONO}" font-size="11" fill="{t['text']}" text-anchor="middle" letter-spacing="1.2">
-<circle cx="62" cy="84" r="19" fill="{t['pink']}" stroke="{t['line']}" stroke-width="2.5"/><path d="M53 84 l6 6 l11 -12" fill="none" stroke="{t['ink']}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="62" y="124">INGEST</text>
-<circle cx="157" cy="84" r="19" fill="{t['blue']}" stroke="{t['line']}" stroke-width="2.5"/><path d="M148 84 l6 6 l11 -12" fill="none" stroke="{t['ink']}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="157" y="124">TRANSFORM</text>
-<circle cx="262" cy="84" r="19" fill="{t['card']}" stroke="{t['line']}" stroke-width="2.5"/><path d="M262 71 a13 13 0 0 1 13 13" fill="none" stroke="{t['ink'] if n == 'light' else t['text']}" stroke-width="3" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 262 84" to="360 262 84" dur="1.4s" repeatCount="indefinite"/></path><text x="262" y="124">RECOMMEND</text>
-<circle cx="360" cy="84" r="19" fill="none" stroke="{t['muted']}" stroke-width="2" stroke-dasharray="4 4"/><text x="360" y="89" font-size="13" fill="{t['muted']}">4</text><text x="360" y="124" fill="{t['muted']}">REPORT</text></g>
-<rect x="24" y="142" width="372" height="12" rx="6" fill="{t['card']}" stroke="{t['line']}" stroke-width="2"/><rect x="26" y="144" width="120" height="8" rx="4" fill="{t['yellow']}"><animate attributeName="width" values="90;210;90" dur="7s" repeatCount="indefinite"/></rect>
-<rect x="20" y="172" width="380" height="112" rx="12" fill="{t['term']}"/>
-<g font-family="{MONO}" font-size="13.5"><text x="36" y="200" fill="{t['termtext']}"><tspan fill="{t['yellow']}">$</tspan> glue run ingest_ai_usage</text><text x="52" y="220" fill="{t['termdim']}">10 vendors · 48,210 rows</text>
-<text x="36" y="244" fill="{t['termtext']}"><tspan fill="{t['yellow']}">$</tspan> spark merge into iceberg.silver</text><text x="52" y="264" fill="{t['termdim']}">upserted · idempotent ✓</text></g>
-<rect x="36" y="269" width="8" height="13" fill="{t['yellow']}"><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.5;.5;.99;1" dur="1.1s" repeatCount="indefinite"/></rect></g>'''
-    badge = f'''<g transform="translate(1090 500)"><circle cx="5" cy="5" r="66" fill="{t['line']}"/><circle r="66" fill="{t['yellow']}" stroke="{t['line']}" stroke-width="3"/>
-<g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/><path id="cp" d="M-45 0 a45 45 0 1 1 90 0 a45 45 0 1 1 -90 0" fill="none"/>
-<text font-family="{MONO}" font-size="12.5" font-weight="500" fill="{t['ink']}" letter-spacing="3.4"><textPath href="#cp">• SAY HELLO • LET'S TALK • SAY HELLO • LET'S TALK </textPath></text></g>
-<path d="M-12 12 L12 -12 M-10 -12 H12 V10" fill="none" stroke="{t['ink']}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>'''
-    body = f'''<defs><pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="{t['grid']}" stroke-opacity="{t['gridop']}"/></pattern>
-<radialGradient id="glow" cx=".3" cy=".4" r=".5"><stop offset="0" stop-color="{t['yellow']}" stop-opacity=".30"/><stop offset="1" stop-color="{t['yellow']}" stop-opacity="0"/></radialGradient>
+    stickers = ""
+    for label, pop, rot, cx, cy, tw in STICKERS:
+        w = tw + 48
+        stickers += f'<g transform="translate({cx} {cy}) rotate({rot})">{nb(t, -w / 2, -32, w, 64, 16, t[pop], 3, 6)}<text x="0" y="10" text-anchor="middle" font-family="{DISPLAY}" font-size="30" font-weight="800" fill="{t["ink"]}" letter-spacing="-.3">{label}</text></g>'
+    badge = f"""<g transform="translate(1092 376)"><circle cx="5" cy="5" r="62" fill="{t['line']}"/><circle r="62" fill="{t['yellow']}" stroke="{t['line']}" stroke-width="3"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/><path id="cp" d="M-42 0 a42 42 0 1 1 84 0 a42 42 0 1 1 -84 0" fill="none"/>
+<text font-family="{MONO}" font-size="12" font-weight="500" fill="{t['ink']}" letter-spacing="3.2"><textPath href="#cp">• SAY HELLO • LET'S TALK • SAY HELLO • LET'S TALK </textPath></text></g>
+<path d="M-11 11 L11 -11 M-9 -11 H11 V9" fill="none" stroke="{t['ink']}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>"""
+    body = f"""<defs><pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="{t['grid']}" stroke-opacity="{t['gridop']}"/></pattern>
+<radialGradient id="glow" cx=".25" cy=".35" r=".5"><stop offset="0" stop-color="{t['yellow']}" stop-opacity=".28"/><stop offset="1" stop-color="{t['yellow']}" stop-opacity="0"/></radialGradient>
 <clipPath id="c"><rect x="3" y="3" width="{W - 6}" height="{H - 6}" rx="26"/></clipPath></defs>
 <rect width="{W}" height="{H}" rx="28" fill="{t['bg']}"/><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="url(#grid)"/><rect width="{W}" height="{H}" fill="url(#glow)"/></g>
 <rect x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="27" fill="none" stroke="{t['line']}" stroke-width="3"/>
-<text x="76" y="98" font-family="{MONO}" font-size="16" font-weight="500" fill="{t['muted']}" letter-spacing="4.5">PHOENIX, AZ</text><rect x="236" y="93" width="250" height="1.6" fill="{t['muted']}" opacity=".6"/>
-<text x="68" y="252" font-family="{DISPLAY}" font-size="180" font-weight="800" fill="{t['text']}" letter-spacing="-7">SAKAR</text>
-<text x="68" y="392" font-family="{DISPLAY}" font-size="180" font-weight="800" fill="{t['text']}" letter-spacing="-7">JOSHI</text>
-<rect x="76" y="470" width="496" height="13" fill="{t['hl']}" opacity="{hlop}"/><rect x="76" y="506" width="118" height="13" fill="{t['hl']}" opacity="{hlop}"/>
-<text x="76" y="458" font-family="{SANS}" font-size="27" fill="{t['text']}">Full-stack software engineer building</text>
-<text x="76" y="494" font-family="{SANS}" font-size="27" font-weight="600" fill="{t['text']}">AI-integrated products and cloud data</text>
-<text x="76" y="530" font-family="{SANS}" font-size="27" fill="{t['text']}"><tspan font-weight="600">pipelines</tspan> that teams can trust.</text>
-{term}{badge}'''
-    return svg(W, H, "Sakar Joshi, full-stack software engineer building AI-integrated products and cloud data pipelines that teams can trust. Phoenix, AZ.", {F_BG, F_I4, F_I6, F_J4, F_J5}, body)
+<text x="76" y="86" font-family="{MONO}" font-size="16" font-weight="500" fill="{t['muted']}" letter-spacing="4.5">PHOENIX, AZ</text><rect x="236" y="81" width="250" height="1.6" fill="{t['muted']}" opacity=".6"/>
+<text x="72" y="176" font-family="{DISPLAY}" font-size="88" font-weight="800" fill="{t['text']}" letter-spacing="-3">Sakar Joshi</text>
+<rect x="{76 + 269}" y="214" width="156" height="13" fill="{t['hl']}" opacity="{hlop}"/><rect x="76" y="250" width="272" height="13" fill="{t['hl']}" opacity="{hlop}"/>
+<text x="76" y="238" font-family="{SANS}" font-size="28" fill="{t['text']}">Hi, I'm Sakar. I build <tspan font-weight="600">AI products</tspan> and the</text>
+<text x="76" y="274" font-family="{SANS}" font-size="28" fill="{t['text']}"><tspan font-weight="600">cloud data pipelines</tspan> behind them.</text>
+{lines(INTRO, 62, 76, 332, 32, font_family=SANS, font_size=22, fill=t['muted'])}
+{stickers}{badge}"""
+    return svg(W, H, "Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real: what teams actually spend on Claude, OpenAI, Gemini and Bedrock. In my own products, the AI proposes and a human decides.", {F_BG, F_I4, F_I6, F_J5}, body)
 
 # ------------------------------------------------------------------ marquee
 MARQUEE = ["PYTHON", "AWS", "SUPABASE", "LLM AGENTS", "FINOPS", "TYPESCRIPT", "REACT", "TERRAFORM", "POSTGRESQL", "PYSPARK", "ICEBERG", "NEXT.JS", "FASTAPI", "VAULT"]
@@ -198,7 +190,7 @@ def art_kramflow(t):
     return s
 
 def card_wide(n):
-    t = THEMES[n]; W, H = 1536, 452; pop = "lilac"
+    t = THEMES[n]; W, H = 1536, 488; pop = "lilac"
     body = nb(t, 4, 4, W - 18, H - 18, 22, t["card"], 3, 9)
     body += nb(t, 38, 36, 60, 60, 12, t[pop], 3, 4) + f'<text x="68" y="76" text-anchor="middle" font-family="{DISPLAY}" font-size="28" font-weight="800" fill="{t["ink"]}">05</text>'
     body += f'<g transform="translate(900 40) rotate(-1.6 270 150)">{nb(t, 0, 0, 540, 300, 18, t[pop], 3, 6)}<g transform="translate(0 0)">{art_kramflow(t)}</g></g>'
