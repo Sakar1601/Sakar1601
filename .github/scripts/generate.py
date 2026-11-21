@@ -103,7 +103,7 @@ def marquee(n):
     return svg(W, H, "Stack: " + ", ".join(MARQUEE), {F_J5}, body)
 
 # ------------------------------------------------------------------ buttons
-BUTTONS = {"portfolio": ("See the work", True), "linkedin": ("LinkedIn", False), "kramflow": ("Kramflow", False)}
+BUTTONS = {"portfolio": ("Portfolio", True), "linkedin": ("LinkedIn", False)}
 
 def button(key, n):
     t = THEMES[n]; label, primary = BUTTONS[key]; w = int(len(label) * 11.8 + (112 if primary else 96)); H = 76
@@ -183,6 +183,36 @@ def card(key, n):
     cx, cy = W - 78, 386
     body += f'<circle cx="{cx + 4}" cy="{cy + 4}" r="31" fill="{t["line"]}"/><circle cx="{cx}" cy="{cy}" r="31" fill="{t["yellow"]}" stroke="{t["line"]}" stroke-width="3"/><path d="M{cx - 11} {cy + 11} L{cx + 11} {cy - 11} M{cx - 4} {cy - 11} H{cx + 11} V{cy + 4}" fill="none" stroke="{t["ink"]}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>'
     return svg(W, H, f"{title}: {desc} {proof}", {F_BG, F_I4, F_J5}, body)
+
+# ------------------------------------------------------------------ wide card: Kramflow
+def art_kramflow(t):
+    ink, paper = t["ink"], "#FFFDF4"; s = ""
+    surfaces = [(18, 22, "Operator console"), (346, 22, "Phone remote"), (18, 214, "Presenter monitor"), (346, 214, "Lobby screen")]
+    for x, y, lab in surfaces:
+        s += f'<line x1="270" y1="150" x2="{x + 88}" y2="{y + 32}" stroke="{ink}" stroke-width="2.5" stroke-dasharray="6 5"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1.6s" repeatCount="indefinite"/></line>'
+    s += f'<rect x="188" y="108" width="164" height="84" rx="16" fill="{paper}" stroke="{ink}" stroke-width="3"/>'
+    s += f'<rect x="188" y="108" width="164" height="84" rx="16" fill="none" stroke="{ink}" stroke-width="2"><animate attributeName="stroke-opacity" values="1;0" dur="2.2s" repeatCount="indefinite"/><animate attributeName="x" values="188;172" dur="2.2s" repeatCount="indefinite"/><animate attributeName="y" values="108;92" dur="2.2s" repeatCount="indefinite"/><animate attributeName="width" values="164;196" dur="2.2s" repeatCount="indefinite"/><animate attributeName="height" values="84;116" dur="2.2s" repeatCount="indefinite"/></rect>'
+    s += f'<text x="270" y="146" text-anchor="middle" font-family="{MONO}" font-size="14" font-weight="500" fill="{ink}" letter-spacing="1.5">SHOW STATE</text><text x="270" y="171" text-anchor="middle" font-family="{MONO}" font-size="12" fill="{ink}" opacity=".7">single source of truth</text>'
+    for x, y, lab in surfaces:
+        s += f'<rect x="{x}" y="{y}" width="176" height="64" rx="12" fill="{paper}" stroke="{ink}" stroke-width="2.5"/><circle cx="{x + 18}" cy="{y + 32}" r="5" fill="{ink}"/><text x="{x + 32}" y="{y + 37}" font-family="{MONO}" font-size="13" font-weight="500" fill="{ink}">{escape(lab)}</text>'
+    return s
+
+def card_wide(n):
+    t = THEMES[n]; W, H = 1536, 452; pop = "lilac"
+    body = nb(t, 4, 4, W - 18, H - 18, 22, t["card"], 3, 9)
+    body += nb(t, 38, 36, 60, 60, 12, t[pop], 3, 4) + f'<text x="68" y="76" text-anchor="middle" font-family="{DISPLAY}" font-size="28" font-weight="800" fill="{t["ink"]}">05</text>'
+    body += f'<g transform="translate(900 40) rotate(-1.6 270 150)">{nb(t, 0, 0, 540, 300, 18, t[pop], 3, 6)}<g transform="translate(0 0)">{art_kramflow(t)}</g></g>'
+    body += f'<text x="40" y="170" font-family="{DISPLAY}" font-size="52" font-weight="800" fill="{t["text"]}" letter-spacing="-1.5">Kramflow</text>'
+    body += lines("A multi-tenant live-event operating system: the operator console, phone remote and every display share one real-time state.", 66, 40, 250, 34, font_family=SANS, font_size=23, fill=t["text"])
+    body += f'<rect x="40" y="338" width="12" height="12" rx="3" fill="{t[pop]}" stroke="{t["line"]}" stroke-width="2.2"/>' + lines("I own the data layer, reliability and AI: tenant isolation, cold-start-proof rate limiting, lease-gated live sequencing.", 70, 64, 336, 28, font_family=MONO, font_size=17.5, fill=t["muted"])
+    x = 40
+    for tag in ["Next.js", "Supabase", "Anthropic"]:
+        w = len(tag) * 9.9 + 36
+        body += f'<rect x="{x}" y="396" width="{w:.0f}" height="42" rx="21" fill="none" stroke="{t["line"]}" stroke-width="2.5"/><text x="{x + w / 2:.0f}" y="423" text-anchor="middle" font-family="{MONO}" font-size="16.5" font-weight="500" fill="{t["text"]}">{escape(tag)}</text>'
+        x += w + 10
+    cx, cy = W - 78, 386
+    body += f'<circle cx="{cx + 4}" cy="{cy + 4}" r="31" fill="{t["line"]}"/><circle cx="{cx}" cy="{cy}" r="31" fill="{t["yellow"]}" stroke="{t["line"]}" stroke-width="3"/><path d="M{cx - 11} {cy + 11} L{cx + 11} {cy - 11} M{cx - 4} {cy - 11} H{cx + 11} V{cy + 4}" fill="none" stroke="{t["ink"]}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>'
+    return svg(W, H, "Kramflow: a multi-tenant live-event operating system where the operator console, phone remote and every display share one real-time state. I own the data layer, reliability and AI features.", {F_BG, F_I4, F_J5}, body)
 
 # ------------------------------------------------------------------ impact tiles
 IMPACT = [("10+", "AI VENDORS TRACKED", "Claude, OpenAI, Gemini, Bedrock, Copilot", "pink"),
@@ -293,6 +323,7 @@ if __name__ == "__main__":
         for k in BUTTONS: (ASSETS / f"btn-{k}-{n}.svg").write_text(button(k, n), encoding="utf-8")
         for k, (e, ti) in heads.items(): (ASSETS / f"h-{k}-{n}.svg").write_text(header(n, e, ti), encoding="utf-8")
         for k in PROJECTS: (ASSETS / f"card-{k}-{n}.svg").write_text(card(k, n), encoding="utf-8")
+        (ASSETS / "card-kramflow-{}.svg".format(n)).write_text(card_wide(n), encoding="utf-8")
         (ASSETS / f"experience-{n}.svg").write_text(experience(n), encoding="utf-8")
         (ASSETS / f"capabilities-{n}.svg").write_text(capabilities(n), encoding="utf-8")
     d = fetch_stats() if os.environ.get("SKIP_STATS") != "1" else dict(repos=7, stars=4, prs=120, contrib=752, langs=[("TypeScript", "#3178c6", .74), ("JavaScript", "#f1e05a", .09), ("Python", "#3572A5", .08), ("CSS", "#563d7c", .06)])
