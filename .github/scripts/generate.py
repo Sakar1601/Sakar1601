@@ -313,6 +313,30 @@ def github(n, d):
     body += f'<text x="{W - 28}" y="107" text-anchor="end" font-family="{MONO}" font-size="11.5" fill="{t["muted"]}">public data · updated {datetime.date.today().isoformat()}</text>'
     return svg(W, H, f"GitHub: {d['repos']} public repos, {d['stars']} stars, {d['prs']} merged pull requests, {d['contrib']} contributions in the last year", {F_J5}, body)
 
+def hashify():
+    """Give every asset a content-hashed filename and rewrite the README references.
+
+    GitHub's image proxy caches by URL, so a changed image must get a new URL: banner-dark.svg -> banner-dark.1a2b3c4d.svg.
+    """
+    import hashlib
+    keep, names = set(), {}
+    for f in sorted(ASSETS.glob("*.svg")):
+        if re.search(r"\.[0-9a-f]{8}\.svg$", f.name): continue
+        stem = f.stem
+        h = hashlib.sha1(f.read_bytes()).hexdigest()[:8]
+        target = ASSETS / f"{stem}.{h}.svg"
+        f.rename(target); keep.add(target.name); names[stem] = f"{stem}.{h}.svg"
+    for f in ASSETS.glob("*.svg"):
+        if f.name not in keep: f.unlink()
+    readme = ROOT / "README.md"
+    if readme.exists():
+        txt = readme.read_text(encoding="utf-8")
+        def sub(m):
+            stem = m.group(1) + m.group(2)
+            return f"assets/{names[stem]}" if stem in names else m.group(0)
+        txt = re.sub(r"assets/((?:[a-z0-9]+-)+?)(?:\d{8}-)?(dark|light)(?:\.[0-9a-f]{8})?\.svg(?:\?v=\d+)?", sub, txt)
+        readme.write_text(txt, encoding="utf-8")
+
 if __name__ == "__main__":
     ASSETS.mkdir(exist_ok=True)
     heads = {"work": ("01 / SELECTED WORK", "What I've built"), "experience": ("02 / EXPERIENCE", "Where I've worked"), "capabilities": ("03 / CAPABILITIES", "What I work with"), "github": ("04 / GITHUB", "In numbers")}
@@ -327,13 +351,6 @@ if __name__ == "__main__":
         (ASSETS / f"experience-{n}.svg").write_text(experience(n), encoding="utf-8")
         (ASSETS / f"capabilities-{n}.svg").write_text(capabilities(n), encoding="utf-8")
     d = fetch_stats() if os.environ.get("SKIP_STATS") != "1" else dict(repos=7, stars=4, prs=120, contrib=752, langs=[("TypeScript", "#3178c6", .74), ("JavaScript", "#f1e05a", .09), ("Python", "#3572A5", .08), ("CSS", "#563d7c", .06)])
-    # The stats image gets a dated filename so GitHub's image proxy (which caches by URL) never serves a stale copy;
-    # the README reference is rewritten to match.
-    stamp = datetime.date.today().strftime("%Y%m%d")
-    for old_file in ASSETS.glob("github-*.svg"): old_file.unlink()
-    for n in THEMES: (ASSETS / f"github-{stamp}-{n}.svg").write_text(github(n, d), encoding="utf-8")
-    readme = ROOT / "README.md"
-    if readme.exists():
-        txt = readme.read_text(encoding="utf-8")
-        readme.write_text(re.sub(r"assets/github-\d{8}-(dark|light)\.svg", lambda m: f"assets/github-{stamp}-{m.group(1)}.svg", txt), encoding="utf-8")
+    for n in THEMES: (ASSETS / f"github-{n}.svg").write_text(github(n, d), encoding="utf-8")
+    hashify()
     print("assets:", len(list(ASSETS.glob("*.svg"))), {k: v for k, v in d.items() if k != "langs"})
