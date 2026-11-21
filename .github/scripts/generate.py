@@ -6,7 +6,7 @@ Everything but the numbers is static data below; the numbers come from the GitHu
 Fonts are embedded as base64 so the SVGs keep their typography inside <img> tags on GitHub.
 Run locally:  GH_TOKEN=$(gh auth token) python3 .github/scripts/generate.py     (SKIP_STATS=1 to skip the API)
 """
-import base64, colorsys, datetime, json, math, os, subprocess, textwrap
+import base64, colorsys, datetime, json, math, os, re, subprocess, textwrap
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -296,5 +296,13 @@ if __name__ == "__main__":
         (ASSETS / f"experience-{n}.svg").write_text(experience(n), encoding="utf-8")
         (ASSETS / f"capabilities-{n}.svg").write_text(capabilities(n), encoding="utf-8")
     d = fetch_stats() if os.environ.get("SKIP_STATS") != "1" else dict(repos=7, stars=4, prs=120, contrib=752, langs=[("TypeScript", "#3178c6", .74), ("JavaScript", "#f1e05a", .09), ("Python", "#3572A5", .08), ("CSS", "#563d7c", .06)])
-    for n in THEMES: (ASSETS / f"github-{n}.svg").write_text(github(n, d), encoding="utf-8")
+    # The stats image gets a dated filename so GitHub's image proxy (which caches by URL) never serves a stale copy;
+    # the README reference is rewritten to match.
+    stamp = datetime.date.today().strftime("%Y%m%d")
+    for old_file in ASSETS.glob("github-*.svg"): old_file.unlink()
+    for n in THEMES: (ASSETS / f"github-{stamp}-{n}.svg").write_text(github(n, d), encoding="utf-8")
+    readme = ROOT / "README.md"
+    if readme.exists():
+        txt = readme.read_text(encoding="utf-8")
+        readme.write_text(re.sub(r"assets/github-\d{8}-(dark|light)\.svg", lambda m: f"assets/github-{stamp}-{m.group(1)}.svg", txt), encoding="utf-8")
     print("assets:", len(list(ASSETS.glob("*.svg"))), {k: v for k, v in d.items() if k != "langs"})
