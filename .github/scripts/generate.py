@@ -165,7 +165,7 @@ def card(key, n):
     return svg(W, H, f"{title}: {desc} {proof}", {F_S7, F_I4, F_J5}, body)
 
 # ------------------------------------------------------------------ experience
-EXPERIENCE = [("MAY 2026 — NOW", "Systems & DevOps Engineer", "Prama AI · Finomics, multi-cloud FinOps", "FinOps-for-AI dashboards across 10+ AI vendors. Glue and PySpark pipelines into Iceberg across 5 clouds. A rightsizing engine with safety guards."),
+EXPERIENCE = [("MAY 2026 — NOW", "Systems & DevOps Engineer", "Prama AI · Finomics, multi-cloud FinOps", "FinOps-for-AI dashboards across 10+ AI vendors. Glue and PySpark pipelines into Iceberg across 5 clouds. Rightsizing with safety guards."),
               ("SEP — DEC 2025", "Frontend Engineer Intern", "XDuce · QBE Insurance", "Built the underwriting submissions inbox: a 180+ record data grid with server-side filtering. 12 features across 3 sprints."),
               ("MAY — DEC 2025", "Web Developer", "ASU Project Humanities", "Owned two sites with 5,000+ monthly visitors. WCAG improvements, +31% email opens, +30% referral traffic."),
               ("SEP 2022 — NOV 2023", "Software Developer", "Macrosoft Creations", "Angular SPAs and .NET REST APIs for two enterprise systems, behind RBAC and ABAC authorization.")]
