@@ -48,9 +48,9 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
 <<<<<<< Updated upstream
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.b0586175.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.8df6afd6.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.99353461.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.3134409f.svg" width="100%"></picture>
 =======
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.b0586175.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.8df6afd6.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.99353461.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.3134409f.svg" width="100%"></picture>
 >>>>>>> Stashed changes
 
 <br>
