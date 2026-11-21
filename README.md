@@ -47,7 +47,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.svg?v=5"><img alt="In numbers" src="assets/h-github-light.svg?v=5" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-20261120-dark.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-20261120-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-20261121-dark.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-20261121-light.svg" width="100%"></picture>
 
 <br>
 
