@@ -339,6 +339,7 @@ def hashify():
 
 if __name__ == "__main__":
     ASSETS.mkdir(exist_ok=True)
+    for stale in ASSETS.glob("*.svg"): stale.unlink()  # everything is regenerated; nothing stale may survive
     heads = {"work": ("01 / SELECTED WORK", "What I've built"), "experience": ("02 / EXPERIENCE", "Where I've worked"), "capabilities": ("03 / CAPABILITIES", "What I work with"), "github": ("04 / GITHUB", "In numbers")}
     for n in THEMES:
         (ASSETS / f"banner-{n}.svg").write_text(banner(n), encoding="utf-8")
