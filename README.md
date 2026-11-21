@@ -1,6 +1,6 @@
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.276e15e2.svg"><img alt="Sakar Joshi, full-stack software engineer building AI-integrated products and cloud data pipelines that teams can trust. Phoenix, AZ." src="assets/banner-light.985b492d.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.994c5f77.svg"><img alt="Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real, and in my own products the AI proposes and a human decides." src="assets/banner-light.d803dd2b.svg" width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/marquee-dark.dbc9ff60.svg"><img alt="Stack: Python, AWS, Supabase, LLM agents, FinOps, TypeScript, React, Terraform, PostgreSQL, PySpark, Iceberg, Next.js, FastAPI, Vault" src="assets/marquee-light.6256b956.svg" width="100%"></picture>
 
@@ -24,7 +24,7 @@
   <a href="https://github.com/Sakar1601/cloudsentry"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cloudsentry-dark.e8f5684c.svg"><img alt="Cloudsentry: your AWS account as a live graph, watched by three AI agents. The model only records intent; a human approves every action." src="assets/card-cloudsentry-light.64186acd.svg" width="49%"></picture></a>
   <a href="https://github.com/Sakar1601/resume-builder-app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-resume-dark.d158e4be.svg"><img alt="ResumeBuilder: ATS-friendly resumes with live preview and AI bullet rewriting, with Zod-validated output." src="assets/card-resume-light.fc9c004b.svg" width="49%"></picture></a>
   <a href="https://github.com/Sakar1601/internal-employee-portal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-portal-dark.614674ca.svg"><img alt="Employee Portal: a directory app deployed like a regulated enterprise, with two Vault clusters that unseal each other." src="assets/card-portal-light.5fd08733.svg" width="49%"></picture></a>
-  <a href="https://github.com/Workflow-bench/kramflow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-kramflow-dark.fb9bfb0e.svg"><img alt="Kramflow: a multi-tenant live-event operating system where the operator console, phone remote and every display share one real-time state. I own the data layer, reliability and AI features." src="assets/card-kramflow-light.58d8af14.svg" width="100%"></picture></a>
+  <a href="https://github.com/Workflow-bench/kramflow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-kramflow-dark.01e7e2a8.svg"><img alt="Kramflow: a multi-tenant live-event operating system where the operator console, phone remote and every display share one real-time state. I own the data layer, reliability and AI features." src="assets/card-kramflow-light.d376b64d.svg" width="100%"></picture></a>
 </p>
 
 <p align="center"><sub><b>Live:</b> <a href="https://monotask.vercel.app">Monotask</a> &nbsp;·&nbsp; <a href="https://sakar1601.github.io/cloudsentry/">Cloudsentry demo</a> &nbsp;·&nbsp; <a href="https://resume-builder-app-phi.vercel.app">ResumeBuilder</a> &nbsp;·&nbsp; <a href="https://sakar1601.github.io/internal-employee-portal/">Employee Portal demo</a> &nbsp;·&nbsp; <a href="https://kramflow.me">Kramflow</a></sub></p>
@@ -47,7 +47,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.db9096c6.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.399dac6c.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.b1f9c7da.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.48924747.svg" width="100%"></picture>
 
 <br>
 
