@@ -55,11 +55,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
-<<<<<<< Updated upstream
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.e099eb5f.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.1ccce235.svg" width="100%"></picture>
-=======
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.e099eb5f.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.1ccce235.svg" width="100%"></picture>
->>>>>>> Stashed changes
 
 <br>
 
