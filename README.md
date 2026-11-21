@@ -1,64 +1,46 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="Sakar Joshi, software engineer in Phoenix. I build AI products with a human in the loop, and the data pipelines underneath them." src="assets/banner-light.svg" width="100%">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg"><img alt="Sakar Joshi, full-stack software engineer building AI-integrated products and cloud data pipelines that teams can trust. Phoenix, AZ." src="assets/banner-light.svg" width="100%"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/marquee-dark.svg"><img alt="Stack: Python, AWS, Supabase, LLM agents, FinOps, TypeScript, React, Terraform, PostgreSQL, PySpark, Iceberg, Next.js, FastAPI, Vault" src="assets/marquee-light.svg" width="100%"></picture>
 
 <br>
 
-[LinkedIn](https://www.linkedin.com/in/sakar-joshi/) &nbsp;&nbsp;/&nbsp;&nbsp; [Portfolio](https://sakar-portfolio-pearl.vercel.app) &nbsp;&nbsp;/&nbsp;&nbsp; [Kramflow](https://kramflow.me)
-
-<br>
+<a href="https://sakar-portfolio-pearl.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg"><img alt="See the work" src="assets/btn-portfolio-light.svg" height="46"></picture></a>&nbsp;
+<a href="https://www.linkedin.com/in/sakar-joshi/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg"><img alt="LinkedIn" src="assets/btn-linkedin-light.svg" height="46"></picture></a>&nbsp;
+<a href="https://kramflow.me"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-kramflow-dark.svg"><img alt="Kramflow" src="assets/btn-kramflow-light.svg" height="46"></picture></a>
 
 </div>
 
-I work across the whole stack, from the data pipelines to the interface. Right now that means **FinOps for AI** at Prama AI: showing companies what they really spend on Claude, OpenAI, Gemini, Bedrock and Copilot. In my own products I ship LLM features the careful way: schema-validated output, per-user limits, and a human approval before anything is written or run.
-
 <br>
 
-### Selected work
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-work-dark.svg"><img alt="What I've built" src="assets/h-work-light.svg" width="100%"></picture>
 
 <p align="center">
-  <a href="https://github.com/Sakar1601/Monotask"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-monotask-dark.svg"><img alt="Monotask: tasks, calendar and habits with Claude-powered capture" src="assets/card-monotask-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/Sakar1601/cloudsentry"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cloudsentry-dark.svg"><img alt="Cloudsentry: your AWS account as a live graph watched by three AI agents" src="assets/card-cloudsentry-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/Sakar1601/resume-builder-app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-resume-dark.svg"><img alt="ResumeBuilder: ATS-friendly resumes with live preview and AI rewriting" src="assets/card-resume-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/Sakar1601/internal-employee-portal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-portal-dark.svg"><img alt="Employee Portal: a directory app deployed like a regulated company with Vault, Terraform, Ansible and AWX" src="assets/card-portal-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/Monotask"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-monotask-dark.svg"><img alt="Monotask: tasks, calendar and habits. Claude captures, and you approve every AI suggestion." src="assets/card-monotask-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/cloudsentry"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cloudsentry-dark.svg"><img alt="Cloudsentry: your AWS account as a live graph, watched by three AI agents you approve." src="assets/card-cloudsentry-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/resume-builder-app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-resume-dark.svg"><img alt="ResumeBuilder: ATS-friendly resumes with live preview and AI that never invents metrics." src="assets/card-resume-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Sakar1601/internal-employee-portal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-portal-dark.svg"><img alt="Employee Portal: a directory app deployed like a regulated company with Vault, Terraform and Ansible." src="assets/card-portal-light.svg" width="49%"></picture></a>
 </p>
 
-<p align="center"><sub>Also: <a href="https://kramflow.me">Kramflow</a>, a real-time live-event operating system I help build (data layer, reliability and AI) &nbsp;·&nbsp; <a href="https://github.com/Sakar1601?tab=repositories">all repositories</a></sub></p>
+<p align="center"><sub>Also: <a href="https://kramflow.me"><b>Kramflow</b></a>, a real-time live-event operating system I help build (data layer, reliability and AI) &nbsp;·&nbsp; <a href="https://github.com/Sakar1601?tab=repositories">all repositories</a></sub></p>
 
 <br>
 
-### Path
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-path-dark.svg"><img alt="Where I've built it" src="assets/h-path-light.svg" width="100%"></picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
-  <img alt="Career path: Software Developer at Macrosoft Creations 2022 to 2023; Web Developer at ASU Project Humanities 2025; Frontend Intern at XDuce 2025; Systems and DevOps Engineer at Prama AI 2026 to now" src="assets/timeline-light.svg" width="100%">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg"><img alt="Career path: Software Developer at Macrosoft Creations 2022 to 2023; Web Developer at ASU Project Humanities 2025; Frontend Intern at XDuce 2025; Systems and DevOps Engineer at Prama AI 2026 to now" src="assets/timeline-light.svg" width="100%"></picture>
 
 <p align="center"><sub>M.S. Information Technology, Arizona State University &nbsp;·&nbsp; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya</sub></p>
 
 <br>
 
-### Stack
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-numbers-dark.svg"><img alt="By the numbers" src="assets/h-numbers-light.svg" width="100%"></picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/ticker-dark.svg">
-  <img alt="Stack: TypeScript, React, Next.js, Angular, Python, FastAPI, SQL, Supabase, PostgreSQL, AWS Glue, PySpark, Apache Iceberg, Terraform, Vault, Docker, Anthropic API, Groq, Playwright" src="assets/ticker-light.svg" width="100%">
-</picture>
-
-<br>
-
-### Numbers
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-  <img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/stats-light.svg" width="100%">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/numbers-dark.svg"><img alt="4 roles shipped, 5 AI-integrated projects, 10+ AI vendors tracked, 2 degrees, plus live GitHub statistics" src="assets/numbers-light.svg" width="100%"></picture>
 
 <br>
 
 <div align="center">
-<sub>Say hello on <a href="https://www.linkedin.com/in/sakar-joshi/">LinkedIn</a>. &nbsp;·&nbsp; The visuals are SVGs generated by <a href=".github/scripts/generate.py">a small script</a>; the numbers refresh daily with a <a href=".github/workflows/profile-assets.yml">GitHub Action</a>.</sub>
+<sub>Built in the same style as my <a href="https://sakar-portfolio-pearl.vercel.app">portfolio</a>. The visuals are SVGs generated by <a href=".github/scripts/generate.py">a small script</a>; the GitHub numbers refresh daily with a <a href=".github/workflows/profile-assets.yml">GitHub Action</a>.</sub>
 </div>
