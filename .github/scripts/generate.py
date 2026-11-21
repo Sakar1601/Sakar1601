@@ -56,7 +56,7 @@ STICKERS = [("AI PRODUCTS", "pink", -6, 930, 112, 200), ("CLOUD DATA", "blue", 5
 INTRO = "At Prama AI I make FinOps for AI real: what teams actually spend on Claude, OpenAI, Gemini and Bedrock. In my own products, the AI proposes and a human decides."
 
 def banner(n):
-    t = THEMES[n]; W, H = 1200, 456
+    t = THEMES[n]; W, H = 1200, 488
     hlop = 1 if n == "light" else .55
     stickers = ""
     for label, pop, rot, cx, cy, tw in STICKERS:
@@ -77,6 +77,7 @@ def banner(n):
 <text x="76" y="238" font-family="{SANS}" font-size="28" fill="{t['text']}">Hi, I'm Sakar. I build <tspan font-weight="600">AI products</tspan> and the</text>
 <text x="76" y="274" font-family="{SANS}" font-size="28" fill="{t['text']}"><tspan font-weight="600">cloud data pipelines</tspan> behind them.</text>
 {lines(INTRO, 62, 76, 332, 32, font_family=SANS, font_size=22, fill=t['muted'])}
+<rect x="76" y="418" width="292" height="42" rx="21" fill="{t['card']}" stroke="{t['line']}" stroke-width="2.5"/><circle cx="100" cy="439" r="5.5" fill="{t['green']}"/><circle cx="100" cy="439" r="5.5" fill="none" stroke="{t['green']}" stroke-width="2"><animate attributeName="r" values="5.5;14" dur="2s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".8;0" dur="2s" repeatCount="indefinite"/></circle><text x="120" y="445" font-family="{MONO}" font-size="15" font-weight="500" fill="{t['text']}">Open to new opportunities</text>
 {stickers}{badge}"""
     return svg(W, H, "Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real: what teams actually spend on Claude, OpenAI, Gemini and Bedrock. In my own products, the AI proposes and a human decides.", {F_BG, F_I4, F_I6, F_J5}, body)
 
@@ -95,7 +96,7 @@ def marquee(n):
     return svg(W, H, "Stack: " + ", ".join(MARQUEE), {F_J5}, body)
 
 # ------------------------------------------------------------------ buttons
-BUTTONS = {"portfolio": ("Portfolio", True), "linkedin": ("LinkedIn", False)}
+BUTTONS = {"portfolio": ("Portfolio", True), "linkedin": ("LinkedIn", False), "email": ("Email", False), "resume": ("Résumé", False)}
 
 def button(key, n):
     t = THEMES[n]; label, primary = BUTTONS[key]; w = int(len(label) * 11.8 + (112 if primary else 96)); H = 76
@@ -258,25 +259,26 @@ def experience(n):
     return svg(W, H, "Experience: " + "; ".join(f"{r} at {c.split(' · ')[0]}, {d.title()}" for d, r, c, _, _ in EXPERIENCE), {F_BG, F_I4, F_I6, F_J5}, body)
 
 # ------------------------------------------------------------------ education
-EDUCATION = [("M.S.", "Information Technology", "Arizona State University", "2024 – 2025", "blue"),
-             ("B.E.", "Computer Engineering", "Kadi Sarva Vishwavidyalaya", "2019 – 2023", "orange")]
+EDUCATION = [("M.S.", "Information Technology", "Arizona State University", "2024 – 2025", "blue", "GPA 4.0 / 4.0"),
+             ("B.E.", "Computer Engineering", "Kadi Sarva Vishwavidyalaya", "2019 – 2023", "orange", "GPA 8.62 / 10")]
 
 def education(n):
     t = THEMES[n]; W, H, cw, gap = 1000, 146, 484, 24; body = ""
-    for i, (deg, title, uni, years, pop) in enumerate(EDUCATION):
+    for i, (deg, title, uni, years, pop, gpa) in enumerate(EDUCATION):
         x = 4 + i * (cw + gap); y = 6
         body += nb(t, x, y, cw, 124, 16, t["card"], 3, 6)
         body += f'<rect x="{x + 24}" y="{y + 20}" width="62" height="30" rx="15" fill="{t[pop]}" stroke="{t["line"]}" stroke-width="2.2"/><text x="{x + 55}" y="{y + 41}" text-anchor="middle" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["ink"]}" letter-spacing="1.2">{deg}</text>'
         body += f'<text x="{x + cw - 24}" y="{y + 41}" text-anchor="end" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["muted"]}" letter-spacing="1.2">{years}</text>'
         body += f'<text x="{x + 24}" y="{y + 82}" font-family="{DISPLAY}" font-size="31" font-weight="800" fill="{t["text"]}" letter-spacing="-.8">{escape(title)}</text>'
-        body += f'<text x="{x + 24}" y="{y + 108}" font-family="{SANS}" font-size="18" font-weight="600" fill="{t["muted"]}">{escape(uni)}</text>'
+        body += f'<text x="{x + 24}" y="{y + 108}" font-family="{SANS}" font-size="18" font-weight="600" fill="{t["muted"]}">{escape(uni)}</text><text x="{x + cw - 24}" y="{y + 108}" text-anchor="end" font-family="{MONO}" font-size="13.5" font-weight="500" fill="{t["muted"]}" letter-spacing=".8">{escape(gpa)}</text>'
     return svg(W, H, "Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023", {F_BG, F_I6, F_J5}, body)
 
 # ------------------------------------------------------------------ capabilities (chips)
-CAPS = [("FRONTEND", "blue", ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS", "Redux Toolkit", "TanStack Query", "Playwright"]),
+CAPS = [("FRONTEND", "blue", ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS", "Redux Toolkit", "TanStack Query"]),
         ("BACKEND & DATA", "green", ["Python", "FastAPI", "PostgreSQL", "SQL", "Supabase", "Row-Level Security", ".NET (C#)", "REST", "JWT / SSO"]),
         ("DATA & CLOUD", "orange", ["AWS Glue", "PySpark", "Apache Iceberg", "Athena", "AWS", "Azure", "OCI", "Terraform", "Vault", "Docker"]),
         ("APPLIED AI", "pink", ["Anthropic API", "Groq", "Zod-validated output", "Tool-use agents", "Human-in-the-loop", "Prompt evals"])]
+CAPS_WIDE = ("TESTING & AI-ASSISTED DEV", "lilac", ["Vitest", "Playwright", "pytest", "CodeQL", "Claude Code", "GitHub Copilot", "Cursor", "Kiro"])
 
 def chip_layout(items, maxw):
     rows, x, y = [], 0, 0
@@ -289,7 +291,8 @@ def chip_layout(items, maxw):
 def capabilities(n):
     t = THEMES[n]; W, cw, gap, pad = 1000, 484, 22, 28
     lay = [chip_layout(items, cw - 2 * pad)[0:2] for _, _, items in CAPS]
-    h1 = 86 + max(lay[0][1], lay[1][1]); h2 = 86 + max(lay[2][1], lay[3][1]); H = h1 + h2 + gap + 16
+    h1 = 86 + max(lay[0][1], lay[1][1]); h2 = 86 + max(lay[2][1], lay[3][1])
+    wide_rows, wide_h = chip_layout(CAPS_WIDE[2], 2 * cw + gap - 2 * pad); h3 = 86 + wide_h; H = h1 + h2 + h3 + 2 * gap + 16
     body = ""
     for k, (title, pop, items) in enumerate(CAPS):
         col, row = k % 2, k // 2
@@ -298,7 +301,22 @@ def capabilities(n):
         body += f'<rect x="{x + pad}" y="{y + 26}" width="16" height="16" rx="4" fill="{t[pop]}" stroke="{t["line"]}" stroke-width="2.2"/><text x="{x + pad + 28}" y="{y + 40}" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["text"]}" letter-spacing="3">{escape(title)}</text>'
         for it, cx, cy, w in lay[k][0]:
             body += f'<rect x="{x + pad + cx:.0f}" y="{y + 64 + cy}" width="{w:.0f}" height="38" rx="10" fill="{t["card"]}" stroke="{t["line"]}" stroke-width="1.8"/><text x="{x + pad + cx + w / 2:.0f}" y="{y + 88 + cy}" text-anchor="middle" font-family="{SANS}" font-size="15.5" font-weight="600" fill="{t["text"]}">{escape(it)}</text>'
-    return svg(W, H, "Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, agents.", {F_I4, F_I6, F_J5}, body)
+    wy = 6 + h1 + gap + h2 + gap; wt, wpop, _ = CAPS_WIDE
+    body += nb(t, 4, wy, 2 * cw + gap, h3, 18, t["card"], 3, 6)
+    body += f'<rect x="{4 + pad}" y="{wy + 26}" width="16" height="16" rx="4" fill="{t[wpop]}" stroke="{t["line"]}" stroke-width="2.2"/><text x="{4 + pad + 28}" y="{wy + 40}" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["text"]}" letter-spacing="3">{escape(wt)}</text>'
+    for it, cx, cy, w in wide_rows:
+        body += f'<rect x="{4 + pad + cx:.0f}" y="{wy + 64 + cy}" width="{w:.0f}" height="38" rx="10" fill="{t["card"]}" stroke="{t["line"]}" stroke-width="1.8"/><text x="{4 + pad + cx + w / 2:.0f}" y="{wy + 88 + cy}" text-anchor="middle" font-family="{SANS}" font-size="15.5" font-weight="600" fill="{t["text"]}">{escape(it)}</text>'
+    return svg(W, H, "Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, agents. Testing and AI-assisted development: Vitest, Playwright, pytest, CodeQL, Claude Code, GitHub Copilot, Cursor, Kiro.", {F_I4, F_I6, F_J5}, body)
+
+# ------------------------------------------------------------------ certifications (one clickable pill each)
+CERTS = [("AWS Academy: Data Engineering", "2025"), ("AWS Academy: ML Foundations", "2025"), ("AWS Academy: ML for NLP", "2025")]
+
+def cert(i, n):
+    t = THEMES[n]; name, year = CERTS[i]; w = int(len(name) * 9.9 + 150); H = 76
+    body = nb(t, 4, 4, w, 56, 28, t["card"], 3, 5)
+    body += f'<rect x="16" y="14" width="36" height="36" rx="10" fill="{t["orange"]}" stroke="{t["line"]}" stroke-width="2.4"/><text x="34" y="38" text-anchor="middle" font-family="{MONO}" font-size="12.5" font-weight="500" fill="{t["ink"]}">AWS</text>'
+    body += f'<text x="66" y="38" font-family="{SANS}" font-size="18" font-weight="600" fill="{t["text"]}">{escape(name)}</text><text x="{w - 18}" y="38" text-anchor="end" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["muted"]}">{year}</text>'
+    return svg(w + 14, H, f"{name}, {year}", {F_I6, F_J5}, body)
 
 # ------------------------------------------------------------------ github (live)
 QUERY = """query($login:String!){user(login:$login){
@@ -371,6 +389,7 @@ if __name__ == "__main__":
         (ASSETS / "card-kramflow-{}.svg".format(n)).write_text(card_wide(n), encoding="utf-8")
         (ASSETS / f"experience-{n}.svg").write_text(experience(n), encoding="utf-8")
         (ASSETS / f"education-{n}.svg").write_text(education(n), encoding="utf-8")
+        for ci in range(len(CERTS)): (ASSETS / f"cert-{ci + 1}-{n}.svg").write_text(cert(ci, n), encoding="utf-8")
         (ASSETS / f"capabilities-{n}.svg").write_text(capabilities(n), encoding="utf-8")
     d = fetch_stats() if os.environ.get("SKIP_STATS") != "1" else dict(repos=7, stars=4, prs=120, contrib=752, langs=[("TypeScript", "#3178c6", .74), ("JavaScript", "#f1e05a", .09), ("Python", "#3572A5", .08), ("CSS", "#563d7c", .06)])
     for n in THEMES: (ASSETS / f"github-{n}.svg").write_text(github(n, d), encoding="utf-8")

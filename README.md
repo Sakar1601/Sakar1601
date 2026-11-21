@@ -1,13 +1,15 @@
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.994c5f77.svg"><img alt="Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real, and in my own products the AI proposes and a human decides." src="assets/banner-light.d803dd2b.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.518215f3.svg"><img alt="Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real, and in my own products the AI proposes and a human decides." src="assets/banner-light.c9bc6876.svg" width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/marquee-dark.dbc9ff60.svg"><img alt="Stack: Python, AWS, Supabase, LLM agents, FinOps, TypeScript, React, Terraform, PostgreSQL, PySpark, Iceberg, Next.js, FastAPI, Vault" src="assets/marquee-light.6256b956.svg" width="100%"></picture>
 
 <br>
 
 <a href="https://sakar-portfolio-pearl.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.78acb9bb.svg"><img alt="Portfolio" src="assets/btn-portfolio-light.495c9fef.svg" height="46"></picture></a>&nbsp;
-<a href="https://www.linkedin.com/in/sakar-joshi/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.2598a98d.svg"><img alt="LinkedIn" src="assets/btn-linkedin-light.f7d4d49d.svg" height="46"></picture></a>
+<a href="https://www.linkedin.com/in/sakar-joshi/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.2598a98d.svg"><img alt="LinkedIn" src="assets/btn-linkedin-light.f7d4d49d.svg" height="46"></picture></a>&nbsp;
+<a href="mailto:sakar.joshi1601@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.048d7fc2.svg"><img alt="Email" src="assets/btn-email-light.820cf693.svg" height="46"></picture></a>&nbsp;
+<a href="https://sakar-portfolio-pearl.vercel.app/Sakar_CV_.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-resume-dark.11e092df.svg"><img alt="Résumé (PDF)" src="assets/btn-resume-light.9c9cbe1d.svg" height="46"></picture></a>
 
 <br><br>
 
@@ -35,22 +37,28 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.b6caf3f9.svg"><img alt="Experience: Systems and DevOps Engineer at Prama AI, May 2026 to now; Frontend Engineer Intern at XDuce for QBE Insurance, Sep to Dec 2025; Web Developer at ASU Project Humanities, May to Dec 2025; Software Developer at Macrosoft Creations, Sep 2022 to Nov 2023" src="assets/experience-light.4f85004e.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/education-dark.b43ecb69.svg"><img alt="Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023" src="assets/education-light.05d53f89.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/education-dark.3bae8e73.svg"><img alt="Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023" src="assets/education-light.cdb098dd.svg" width="100%"></picture>
+
+<p align="center"><sub><b>CERTIFICATIONS</b></sub><br>
+<a href="https://www.credly.com/badges/d5e2cd91-379a-4773-878a-c9231329d95b/linked_in_profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-1-dark.0fe96579.svg"><img alt="AWS Academy: Data Engineering, 2025" src="assets/cert-1-light.5b40c523.svg" height="44"></picture></a>
+<a href="https://www.credly.com/badges/c63b902e-0028-4d65-b47a-8d2002f2749f/linked_in_profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-2-dark.7cb9fb17.svg"><img alt="AWS Academy: ML Foundations, 2025" src="assets/cert-2-light.3d7cf575.svg" height="44"></picture></a>
+<a href="https://www.credly.com/badges/82947456-3b9b-43ab-b013-52ad9de560e9/linked_in_profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-3-dark.cc958aa2.svg"><img alt="AWS Academy: ML for NLP, 2025" src="assets/cert-3-light.6abdb953.svg" height="44"></picture></a>
+</p>
 
 <br>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-capabilities-dark.3fae9094.svg"><img alt="What I work with" src="assets/h-capabilities-light.b18fc94a.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-dark.e43b7a16.svg"><img alt="Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, tool-use agents." src="assets/capabilities-light.00b9d876.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-dark.68d13964.svg"><img alt="Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, tool-use agents." src="assets/capabilities-light.ea8a16a1.svg" width="100%"></picture>
 
 <br>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
 <<<<<<< Updated upstream
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.99353461.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.3134409f.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.024c4d3c.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.8c3ad736.svg" width="100%"></picture>
 =======
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.99353461.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.3134409f.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.024c4d3c.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.8c3ad736.svg" width="100%"></picture>
 >>>>>>> Stashed changes
 
 <br>
