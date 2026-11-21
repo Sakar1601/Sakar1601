@@ -1,101 +1,177 @@
-## **👋 Hey, I’m Sakar Joshi**
+<div align="center">
 
-💻 **Software Engineer | 🧩 Full-Stack & System Builder | ☁️ Cloud & Architecture**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Sakar Joshi: Software Engineer, full-stack, cloud data and applied AI" src="assets/banner-light.svg" width="100%">
+</picture>
 
-🤖 Using **AI as a productivity multiplie**r, not a crutch
+[**LinkedIn**](https://www.linkedin.com/in/sakar-joshi/) &nbsp;·&nbsp; [**Portfolio**](https://sakar-portfolio-pearl.vercel.app) &nbsp;·&nbsp; [**Monotask**](https://monotask.vercel.app) &nbsp;·&nbsp; [**Kramflow**](https://kramflow.me) &nbsp;·&nbsp; [**Cloudsentry**](https://sakar1601.github.io/cloudsentry/)
 
-I build **production-grade systems** where frontend polish, backend correctness, and cloud architecture actually work together.
-I care about **how systems behave in the real world**, not just how they demo.
+</div>
 
-## **🧠 About Me**
+&nbsp;
 
-🎓 **M.S. in Information Technology** — Arizona State University (GPA: 4.0)
-📍 Tempe, AZ
-🚀 **Open to full-time Software Engineering roles**
+## About
 
-I’ve worked on **enterprise platforms, university-scale systems, live-event applications**, and cloud-native projects.
-From requirements → architecture → implementation → deployment, I like owning the whole story.
+I'm a full-stack engineer who likes to own the whole vertical slice: the data pipeline underneath, the logic in the middle, and the interface people actually touch.
 
-## **🧰 What I Build**
-## **☁️ AWS Cloud Engineer’s Toolbox**
+**AI is the through-line.** At **Prama AI** I work on the FinOps-for-AI layer of *Finomics*, the part that shows companies what they really spend on Claude, OpenAI, Gemini, Bedrock and Copilot. In my own products I ship real runtime LLM features: schema-constrained extraction, tool-using agents, and a human approval gate before anything is written or executed.
 
-An interactive, fully serverless simulation of modern cloud backend systems.
+<table>
+<tr>
+<td width="33%" valign="top">
 
-🔹 Live AWS services (not static mocks)
-🔹 Lambda, API Gateway, DynamoDB, S3
-🔹 CI/CD, Infrastructure flows, observability concepts
-🔹 Designed for clarity, scale, and zero-dollar hosting
+**Applied AI**<br>
+Structured output validated with Zod, anti-hallucination prompting, per-user quotas, and human review on every write.
 
-Focus: Cloud architecture · system design · cost-aware infrastructure
+</td>
+<td width="33%" valign="top">
 
-## **🤖 AI-Powered Resume Builder**
+**Data and cloud**<br>
+AWS Glue, PySpark and Apache Iceberg pipelines across AWS, Azure, OCI and Alibaba Cloud, with idempotent loads.
 
-A real product built for real hiring pipelines.
+</td>
+<td width="33%" valign="top">
 
-✨ Live resume editor + instant preview
-✨ AI-assisted bullet rewriting & job tailoring
-✨ Guest mode → authenticated users
-✨ Secure data isolation with Supabase RLS
+**Full-stack products**<br>
+React, Next.js and TypeScript on Supabase, with security enforced at the database layer (Row-Level Security).
 
-Focus: Full-stack architecture · AI integration · UX for recruiters
+</td>
+</tr>
+</table>
 
-## **✅ Monotask**
+&nbsp;
 
-A clean productivity system for tasks and habits.
+## Featured projects
 
-📊 Analytics dashboards
-🔐 Secure per-user data isolation
-⚡ Optimistic updates & cache-driven state
-🌓 Light/Dark mode with preferences
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Focus: Scalable frontend architecture · data integrity · performance
+<a href="https://monotask.vercel.app"><img src="https://raw.githubusercontent.com/Sakar1601/Monotask/main/docs/screenshots/dashboard.png" alt="Monotask dashboard" width="100%"></a>
 
-## **🏆 Nexus Job Portal**
+**[Monotask](https://github.com/Sakar1601/Monotask)**<br>
+Tasks, calendar, habits and analytics in a minimal monochrome PWA. Claude turns plain English into structured tasks, and every AI suggestion is schema-validated and human-approved before it is written. Two-way Google and Outlook sync.
 
-Hackathon-winning full-stack system (built in 24 hours).
+`React` `Supabase` `RLS` `Claude` `Edge Functions` `PWA`<br>
+[Live](https://monotask.vercel.app) · [Code](https://github.com/Sakar1601/Monotask)
 
-👥 Multi-role platform (students, companies, universities)
-📄 Job pools, applications, notifications
-🏅 Awarded Most Valuable Project at iQuest 2021
+</td>
+<td width="50%" valign="top">
 
-Focus: Rapid system design · collaboration · delivery under pressure
+<a href="https://sakar1601.github.io/cloudsentry/"><img src="https://raw.githubusercontent.com/Sakar1601/cloudsentry/main/docs/images/banner.png" alt="Cloudsentry" width="100%"></a>
 
-## **🧩 Tech Stack (What I Actually Use)**
+**[Cloudsentry](https://github.com/Sakar1601/cloudsentry)**<br>
+A real AWS account drawn as a live graph and watched by three Claude agents (cost, performance, security). The model can only record intent: a human approves before anything runs, and proposals are validated twice.
 
-**🧑‍💻 Languages**
+`FastAPI` `boto3` `Anthropic tool use` `Next.js` `Terraform`<br>
+[Live demo](https://sakar1601.github.io/cloudsentry/) · [Code](https://github.com/Sakar1601/cloudsentry)
 
-🟨 JavaScript · 🔷 TypeScript · 🐍 Python · 🗄️ SQL
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**🎨 Frontend**
+<a href="https://github.com/Sakar1601/resume-builder-app"><img src="https://raw.githubusercontent.com/Sakar1601/resume-builder-app/main/docs/screenshots/editor.png" alt="ResumeBuilder editor with live preview" width="100%"></a>
 
-⚛️ React · ⏭️ Next.js · 🅰️ Angular · 🎨 Tailwind CSS · ♿ Accessibility (WCAG)
+**[ResumeBuilder](https://github.com/Sakar1601/resume-builder-app)**<br>
+ATS-friendly resume builder with live preview. AI rewrites bullets or tailors a whole resume to a job description, using Zod-validated output with an automatic retry and prompts that never invent metrics.
 
-**🏗️ Backend & Architecture**
+`Next.js` `Supabase` `Groq` `Zod` `Playwright`<br>
+[Live](https://resume-builder-app-phi.vercel.app) · [Code](https://github.com/Sakar1601/resume-builder-app)
 
-🗃️ PostgreSQL · 🔐 Auth (RLS, RBAC, ABAC) · 🔌 REST APIs · 🧠 Data Modeling
+</td>
+<td width="50%" valign="top">
 
-**☁️ Cloud & DevOps**
+<a href="https://sakar1601.github.io/internal-employee-portal/"><img src="https://raw.githubusercontent.com/Sakar1601/internal-employee-portal/main/docs/images/banner.png" alt="Employee Portal" width="100%"></a>
 
-☁️ AWS (Lambda, S3, API Gateway, DynamoDB)
-🔁 CI/CD · 🐳 Docker · 💸 Cost-aware design
+**[Internal Employee Portal](https://github.com/Sakar1601/internal-employee-portal)**<br>
+A small directory app deployed the way a regulated, network-isolated company would: Terraform, two HashiCorp Vault clusters that unseal each other, Ansible and AWX, with no public registries.
 
-**🤖 AI as a Multiplier**
+`Terraform` `Vault` `Ansible` `AWX` `FastAPI` `React`<br>
+[Live demo](https://sakar1601.github.io/internal-employee-portal/) · [Code](https://github.com/Sakar1601/internal-employee-portal)
 
-🧠 GitHub Copilot · Claude · OpenAI
-Used for refactoring, debugging, architecture exploration, and content quality
+</td>
+</tr>
+</table>
 
-## **🧭 How I Think About Engineering**
+**[Kramflow](https://kramflow.me)** · a multi-tenant live-event operating system where the operator console, phone remote and every display surface share one real-time state. I own the data layer, reliability and AI features: tenant isolation fixes, a rate limiter that survives serverless cold starts, lease-gated live sequencing, and human-reviewed Claude features. ([Code](https://github.com/Workflow-bench/kramflow))
 
-🧩 Architecture > Frameworks
-🧠 Clarity before cleverness
-🤖 AI should amplify thinking, not replace it
-📈 Systems must scale with users and developers
-🚢 Shipping matters — maintainability matters more
+&nbsp;
 
-## **🌍 Let’s Connect**
+## Experience
 
-🔗 LinkedIn: https://linkedin.com/in/sakar-joshi
+<details open>
+<summary><b>Systems & DevOps Engineer</b> · Prama AI &nbsp;<sub>May 2026 – present · Phoenix, AZ (remote)</sub></summary>
+<br>
 
-📫 Email: sakar.joshi1601@gmail.com
+On **Finomics**, a multi-cloud FinOps platform whose flagship is FinOps for AI.
 
-_"Make it work. Make it right. Make it scalable."_
+- Built React/TypeScript dashboards tracking AI-tool and SaaS spend across **10+ AI/LLM vendors** with org, team and member drill-down, delivered in 20+ pull requests on one reusable per-provider pattern.
+- Built AWS Glue/PySpark to Iceberg pipelines that ingest vendor usage and cost data across **AWS, Azure, Azure China, OCI and Alibaba Cloud**, with MERGE INTO upserts so re-runs stay idempotent.
+- Built threshold-driven rightsizing and idle-resource recommendations with live SKU pricing and annualized savings, hardened with multi-metric safety guards, a 50%-per-cycle downsizing cap and peak-utilization gating.
+- Found and fixed silent data-loss bugs after live runs, and moved core metrics to 5-minute resolution with peak (max) utilization alongside the mean.
+
+</details>
+
+<details>
+<summary><b>Frontend Engineer Intern</b> · XDuce <sub>(client: QBE Insurance)</sub> &nbsp;<sub>Sep – Dec 2025 · Remote</sub></summary>
+<br>
+
+- Built the All Submissions inbox of a cyber-insurance underwriting portal: a sortable, filterable data grid (180+ records per view) with server-side pagination and debounced search.
+- Implemented predictable AND-semantics filtering across tabs, search, column filters and a My/All toggle, plus lifecycle-driven Active/Reviewed tabs with Red/Amber/Green risk indicators.
+- Shipped **12 production features across 3 sprints** against JIRA user stories.
+
+</details>
+
+<details>
+<summary><b>Web Developer</b> · ASU Project Humanities &nbsp;<sub>May – Dec 2025 · Tempe, AZ</sub></summary>
+<br>
+
+- Owned the web presence of two ASU platforms serving **5,000+ monthly visitors**, improving accessibility (WCAG) and information architecture across 10+ pages.
+- Direct traffic grew **12%**, referral traffic **30%**, pledge-page engagement **20%**, and email open rates **31%** through GA4, Salesforce and Mailchimp workflows.
+
+</details>
+
+<details>
+<summary><b>Software Developer</b> · Macrosoft Creations &nbsp;<sub>Sep 2022 – Nov 2023 · Gandhinagar, India</sub></summary>
+<br>
+
+- Built Angular SPA features and **.NET (C#) REST APIs** for two enterprise systems (Event Management and Personnel Care) behind an RBAC/ABAC authorization model.
+- Delivered multi-step reactive forms, dashboards, QR/ID scanning, webcam attendance, and client-side Excel/PDF reporting, backed by SQL for filtering, pagination and exports.
+
+</details>
+
+&nbsp;
+
+## Toolbox
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/skills-dark.svg">
+  <img alt="Skills and tools: TypeScript, React, Next.js, Python, Supabase, PostgreSQL, AWS, Terraform, Anthropic API and more" src="assets/skills-light.svg" width="100%">
+</picture>
+
+&nbsp;
+
+## GitHub, by the numbers
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/stats-light.svg" width="100%">
+</picture>
+
+&nbsp;
+
+## Education
+
+**M.S., Information Technology** · Arizona State University, Tempe, AZ &nbsp;<sub>2024 – 2025</sub><br>
+**B.E., Computer Engineering** · Kadi Sarva Vishwavidyalaya, Gandhinagar, India &nbsp;<sub>2019 – 2023</sub>
+
+&nbsp;
+
+## Say hello
+
+I'm happy to talk about FinOps for AI, LLM features that keep a human in the loop, or data pipelines across clouds.
+Reach me on [LinkedIn](https://www.linkedin.com/in/sakar-joshi/).
+
+<sub>The banner, toolbox and stats above are SVGs generated by [`.github/scripts/generate.py`](.github/scripts/generate.py), and the stats refresh daily through a [GitHub Action](.github/workflows/profile-assets.yml). Fonts: Space Grotesk, Inter and JetBrains Mono.</sub>
