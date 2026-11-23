@@ -55,7 +55,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-github-dark.9502d759.svg"><img alt="In numbers" src="assets/h-github-light.95085f26.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.c4d7746b.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.378cd866.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.c0c7658a.svg"><img alt="GitHub statistics: public repositories, stars, merged pull requests and contributions, with top languages" src="assets/github-light.63df7e1a.svg" width="100%"></picture>
 
 <br>
 
