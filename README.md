@@ -35,7 +35,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-experience-dark.361f19a4.svg"><img alt="Where I've worked" src="assets/h-experience-light.515ac14e.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.89e4c881.svg"><img alt="Experience: Systems and DevOps Engineer at Prama AI, May 2026 to now, with client American Express (Next Gen Database Management) since November 2026 and Finomics before that; Frontend Engineer Intern at XDuce for QBE Insurance, Sep to Dec 2025; Web Developer at ASU Project Humanities, May to Dec 2025; Software Developer at Macrosoft Creations, Sep 2022 to Nov 2023" src="assets/experience-light.d2d71a9e.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.89e4c881.svg"><img alt="Experience: Systems and DevOps Engineer at Prama AI, May 2026 to now, with client American Express (Next Gen Database Management) since November 2026 and Finomics before that (10-service OCI pipeline, 6 rightsizing engines); Frontend Engineer Intern at XDuce for QBE Insurance, Sep to Dec 2025; Web Developer at ASU Project Humanities, May to Dec 2025; Software Developer at Macrosoft Creations, Sep 2022 to Nov 2023" src="assets/experience-light.d2d71a9e.svg" width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/education-dark.3bae8e73.svg"><img alt="Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023" src="assets/education-light.cdb098dd.svg" width="100%"></picture>
 
