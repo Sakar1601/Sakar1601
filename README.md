@@ -1,8 +1,8 @@
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.518215f3.svg"><img alt="Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real, and in my own products the AI proposes and a human decides." src="assets/banner-light.c9bc6876.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.20fe8774.svg"><img alt="Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I now work with American Express on database automation, after FinOps for AI. In my own products the AI proposes and a human decides." src="assets/banner-light.6b25a228.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/marquee-dark.dbc9ff60.svg"><img alt="Stack: Python, AWS, Supabase, LLM agents, FinOps, TypeScript, React, Terraform, PostgreSQL, PySpark, Iceberg, Next.js, FastAPI, Vault" src="assets/marquee-light.6256b956.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/marquee-dark.6c7e9638.svg"><img alt="Stack: Python, AWS, Supabase, LLM agents, FinOps, TypeScript, React, Terraform, PostgreSQL, MySQL, Couchbase, PySpark, Iceberg, Next.js, FastAPI, Vault" src="assets/marquee-light.cd4dc116.svg" width="100%"></picture>
 
 <br>
 
@@ -35,7 +35,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-experience-dark.361f19a4.svg"><img alt="Where I've worked" src="assets/h-experience-light.515ac14e.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.b6caf3f9.svg"><img alt="Experience: Systems and DevOps Engineer at Prama AI, May 2026 to now; Frontend Engineer Intern at XDuce for QBE Insurance, Sep to Dec 2025; Web Developer at ASU Project Humanities, May to Dec 2025; Software Developer at Macrosoft Creations, Sep 2022 to Nov 2023" src="assets/experience-light.4f85004e.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.89e4c881.svg"><img alt="Experience: Systems and DevOps Engineer at Prama AI, May 2026 to now, with client American Express (Next Gen Database Management) since November 2026 and Finomics before that; Frontend Engineer Intern at XDuce for QBE Insurance, Sep to Dec 2025; Web Developer at ASU Project Humanities, May to Dec 2025; Software Developer at Macrosoft Creations, Sep 2022 to Nov 2023" src="assets/experience-light.d2d71a9e.svg" width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/education-dark.3bae8e73.svg"><img alt="Education: M.S. Information Technology, Arizona State University, 2024 to 2025; B.E. Computer Engineering, Kadi Sarva Vishwavidyalaya, 2019 to 2023" src="assets/education-light.cdb098dd.svg" width="100%"></picture>
 
@@ -49,7 +49,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-capabilities-dark.3fae9094.svg"><img alt="What I work with" src="assets/h-capabilities-light.b18fc94a.svg" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-dark.68d13964.svg"><img alt="Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, tool-use agents." src="assets/capabilities-light.ea8a16a1.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-dark.9ec00485.svg"><img alt="Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, MySQL, Couchbase, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, tool-use agents." src="assets/capabilities-light.e8c321fc.svg" width="100%"></picture>
 
 <br>
 
