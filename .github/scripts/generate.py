@@ -53,7 +53,7 @@ POPS = ["pink", "blue", "green", "orange", "lilac"]
 # ------------------------------------------------------------------ banner
 STICKERS = [("AI PRODUCTS", "pink", -6, 930, 112, 200), ("CLOUD DATA", "blue", 5, 1010, 198, 184), ("FINOPS", "green", -4, 842, 214, 112),
             ("FULL-STACK", "orange", 4, 958, 292, 178)]
-INTRO = "At Prama AI I make FinOps for AI real: what teams actually spend on Claude, OpenAI, Gemini and Bedrock. In my own products, the AI proposes and a human decides."
+INTRO = "At Prama AI I now work with American Express on database automation, after FinOps for AI. In my own products, the AI proposes and a human decides."
 
 def banner(n):
     t = THEMES[n]; W, H = 1200, 488
@@ -79,10 +79,10 @@ def banner(n):
 {lines(INTRO, 62, 76, 332, 32, font_family=SANS, font_size=22, fill=t['muted'])}
 <rect x="76" y="418" width="292" height="42" rx="21" fill="{t['card']}" stroke="{t['line']}" stroke-width="2.5"/><circle cx="100" cy="439" r="5.5" fill="{t['green']}"/><circle cx="100" cy="439" r="5.5" fill="none" stroke="{t['green']}" stroke-width="2"><animate attributeName="r" values="5.5;14" dur="2s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".8;0" dur="2s" repeatCount="indefinite"/></circle><text x="120" y="445" font-family="{MONO}" font-size="15" font-weight="500" fill="{t['text']}">Open to new opportunities</text>
 {stickers}{badge}"""
-    return svg(W, H, "Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I make FinOps for AI real: what teams actually spend on Claude, OpenAI, Gemini and Bedrock. In my own products, the AI proposes and a human decides.", {F_BG, F_I4, F_I6, F_J5}, body)
+    return svg(W, H, "Sakar Joshi, full-stack software engineer in Phoenix. I build AI products and the cloud data pipelines behind them. At Prama AI I now work with American Express on database automation, after FinOps for AI. In my own products, the AI proposes and a human decides.", {F_BG, F_I4, F_I6, F_J5}, body)
 
 # ------------------------------------------------------------------ marquee
-MARQUEE = ["PYTHON", "AWS", "SUPABASE", "LLM AGENTS", "FINOPS", "TYPESCRIPT", "REACT", "TERRAFORM", "POSTGRESQL", "PYSPARK", "ICEBERG", "NEXT.JS", "FASTAPI", "VAULT"]
+MARQUEE = ["PYTHON", "AWS", "SUPABASE", "LLM AGENTS", "FINOPS", "TYPESCRIPT", "REACT", "TERRAFORM", "POSTGRESQL", "MYSQL", "COUCHBASE", "PYSPARK", "ICEBERG", "NEXT.JS", "FASTAPI", "VAULT"]
 
 def marquee(n):
     t = THEMES[n]; W, H = 1200, 60; cw = 16 * .6 + 5
@@ -239,7 +239,7 @@ def impact(n):
     return svg(W, H, "Impact: 10+ AI vendors tracked, 5 clouds ingested, 20+ PRs on one reusable pattern, 12 features shipped in 3 sprints", {F_BG, F_I4, F_J5}, body)
 
 # ------------------------------------------------------------------ experience
-EXPERIENCE = [("MAY 2026 – NOW", "Systems & DevOps Engineer", "Prama AI · Finomics, multi-cloud FinOps", "FinOps-for-AI dashboards across 10+ AI vendors. Glue and PySpark pipelines into Iceberg across 5 clouds. Rightsizing with safety guards.", "yellow"),
+EXPERIENCE = [("MAY 2026 – NOW", "Systems & DevOps Engineer", "Prama AI · Client: American Express", "Build, test and maintain NAF across PostgreSQL, Couchbase and MySQL. Earlier: Finomics, a multi-cloud FinOps platform.", "yellow"),
               ("SEP – DEC 2025", "Frontend Engineer Intern", "XDuce · QBE Insurance", "Built the underwriting submissions inbox: a 180+ record data grid with server-side filtering. 12 features across 3 sprints.", "orange"),
               ("MAY – DEC 2025", "Web Developer", "ASU Project Humanities", "Owned two sites with 5,000+ monthly visitors. WCAG improvements, +31% email opens, +30% referral traffic.", "green"),
               ("SEP 2022 – NOV 2023", "Software Developer", "Macrosoft Creations", "Angular SPAs and .NET REST APIs for two enterprise systems, behind RBAC and ABAC authorization.", "lilac")]
@@ -275,7 +275,7 @@ def education(n):
 
 # ------------------------------------------------------------------ capabilities (chips)
 CAPS = [("FRONTEND", "blue", ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS", "Redux Toolkit", "TanStack Query"]),
-        ("BACKEND & DATA", "green", ["Python", "FastAPI", "PostgreSQL", "SQL", "Supabase", "Row-Level Security", ".NET (C#)", "REST", "JWT / SSO"]),
+        ("BACKEND & DATA", "green", ["Python", "FastAPI", "PostgreSQL", "MySQL", "Couchbase", "SQL", "Supabase", "Row-Level Security", ".NET (C#)", "REST", "JWT / SSO"]),
         ("DATA & CLOUD", "orange", ["AWS Glue", "PySpark", "Apache Iceberg", "Athena", "AWS", "Azure", "OCI", "Terraform", "Vault", "Docker"]),
         ("APPLIED AI", "pink", ["Anthropic API", "Groq", "Zod-validated output", "Tool-use agents", "Human-in-the-loop", "Prompt evals"])]
 CAPS_WIDE = ("TESTING & AI-ASSISTED DEV", "lilac", ["Vitest", "Playwright", "pytest", "CodeQL", "Claude Code", "GitHub Copilot", "Cursor", "Kiro"])
@@ -306,7 +306,7 @@ def capabilities(n):
     body += f'<rect x="{4 + pad}" y="{wy + 26}" width="16" height="16" rx="4" fill="{t[wpop]}" stroke="{t["line"]}" stroke-width="2.2"/><text x="{4 + pad + 28}" y="{wy + 40}" font-family="{MONO}" font-size="14" font-weight="500" fill="{t["text"]}" letter-spacing="3">{escape(wt)}</text>'
     for it, cx, cy, w in wide_rows:
         body += f'<rect x="{4 + pad + cx:.0f}" y="{wy + 64 + cy}" width="{w:.0f}" height="38" rx="10" fill="{t["card"]}" stroke="{t["line"]}" stroke-width="1.8"/><text x="{4 + pad + cx + w / 2:.0f}" y="{wy + 88 + cy}" text-anchor="middle" font-family="{SANS}" font-size="15.5" font-weight="600" fill="{t["text"]}">{escape(it)}</text>'
-    return svg(W, H, "Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, agents. Testing and AI-assisted development: Vitest, Playwright, pytest, CodeQL, Claude Code, GitHub Copilot, Cursor, Kiro.", {F_I4, F_I6, F_J5}, body)
+    return svg(W, H, "Capabilities. Frontend: React, Next.js, Angular, TypeScript. Backend and data: Python, FastAPI, PostgreSQL, MySQL, Couchbase, Supabase. Data and cloud: AWS Glue, PySpark, Apache Iceberg, Terraform. Applied AI: Anthropic API, Groq, Zod, agents. Testing and AI-assisted development: Vitest, Playwright, pytest, CodeQL, Claude Code, GitHub Copilot, Cursor, Kiro.", {F_I4, F_I6, F_J5}, body)
 
 # ------------------------------------------------------------------ certifications (one clickable pill each)
 CERTS = [("AWS Academy: Data Engineering", "2025"), ("AWS Academy: ML Foundations", "2025"), ("AWS Academy: ML for NLP", "2025")]
